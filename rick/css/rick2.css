@@ -1,0 +1,421 @@
+@charset "utf-8";
+/* CSS Document */
+/* styles for whole doc */
+html {
+  overflow-x: hidden;
+}
+.rick-font {
+	font-family: 'Merriweather', serif;
+}
+.aor-font {
+
+font-family: 'Palanquin Dark', sans-serif;
+}
+.row {
+	max-width: 90rem;
+}
+.sticky {
+	z-index: 25;
+}
+body {
+  background-color: #222;
+	font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
+	color: #4a4a4a;
+  }
+.highlight {
+	color: #0f6cdf;
+}
+.v-space-sm {
+	margin-top: .5em;
+}
+.h-space {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+li.active a {
+	color: #2D8CD7;
+}
+
+div.off-canvas-wrapper div.off-canvas-wrapper-inner div.off-canvas-content {
+	overflow-y: hidden;
+	background-color: #222;
+/*	    box-shadow: 0 0 0px rgba(10, 10, 10, 0); turn off box shadow on off canvas content */
+}
+div#offCanvasLeft.off-canvas.position-left {
+	background: #222;
+}
+/* styles for header */
+
+div.detail-head-large {
+ 	width: 100%;
+	height: 4em;
+	position: absolute;
+  top: 0;
+	max-width: 1440px;
+ z-index: -1;
+}
+.head-logo {
+	padding: .05em 0 0 0;
+}
+.head-container {
+  padding: 0;
+}
+.cart-br-space {
+	line-height: 25px;
+}
+.cart-v-space {
+	margin-top: 12px;
+}
+.detail-head-menu {
+	text-align: right;
+  color: white;
+}
+.head-menu {
+	list-style-type: none;
+	padding: .05em .5em 0 0;
+	margin: 0;
+}
+.head-menu li {
+	display: inline;
+}
+li a {
+	color: white;
+  padding: 0 .5em 0 .5em;
+} 
+
+/*div.detail-head-small {
+ 	width: 100%;
+	height: 4em;
+	position: absolute;
+  top: 0;
+	max-width: none;
+ z-index: -1;
+}*/
+
+/* styles for main content at top, i.e. main image and text description */
+
+.main-row {
+	padding: 4em 0 0 0;
+	background-color: #a7a99b;
+	background-image:url(../img/grey_background.jpg)
+}
+.main-image-panel.columns {
+	padding: 0;
+}
+.arrow {
+  padding: 20%;
+}
+.small-1.column.text-center.divarrow {
+	padding-top: 25%;
+}
+.main-image a {
+	color: #5e5e5e;
+}
+
+div.row.main-image {
+	padding: 0;
+	/*	padding: 4.5em 0 0 0;*/
+	margin: 0;
+}
+
+cite {
+	color: #4a4a4a;
+}
+.add-to-cart-bt {
+	color: #a7a99b;
+	background-color: #4a4a4a;
+	padding: 5px;
+	margin: 1em 0 1em 0;
+	width: 110px;
+	text-align: center;
+	border-radius: 8px;	
+}
+.detail-text a {
+	color: white;
+}
+.detail-text {
+	margin-bottom: 1em;
+}
+.main-image .column {
+	padding: 0;
+}
+#zoom-minus {
+	display: none;
+}
+#zoom-divider {
+	display: none;
+}
+/* styles for secondary content below the fold */
+
+div.divide-container-lg {
+	width: 100%;
+	height: 115px;
+	position:relative;
+	max-width:1440px;
+	padding: 0;
+}
+div.divide-container-sm {
+	width: 100%;
+	height: 50px;
+	position:relative;
+	max-width:1440px;
+	padding: 0;
+}
+
+.divide-label-lg {
+	position:relative;
+	height: 115px;
+}
+.divide-label-sm {
+	position:relative;
+	height: 50px;
+}
+
+div.divide-bkg {
+/*	position: absolute;
+	top: 0;
+*/	
+z-index: -1;
+}
+div.row.divide-row {
+	position: absolute;
+	top: 0px;
+	color: #ababab;
+	width: 100%;
+	margin: 0;
+}
+
+.divide-content-sm {
+	position:absolute;
+	bottom: -15px;
+}
+.divide-content-lg {
+	position:absolute;
+	bottom: 15px;
+}
+
+.social-icons-white {
+	margin-left: 2em;
+}
+.social-icons-white a {
+	color: white;
+}
+.social-icons-white a i {
+	padding: 0 1em 0 0 ;	
+}
+.social {
+/*clear: both;
+	width: 90%;*/
+	margin-top: .4em ;
+	text-align: center;
+}
+.social-icons {
+	float: left;
+}
+.social-icons a i {
+	padding: 0 2em 0 0 ;	
+}
+.social-icons a, .controls a,  footer div p {
+	color: #5e5e5e;
+}
+/*.blue-text-panel {
+	background-color: #a7a99b; 
+	background-image:url(../img/grey_background.jpg)
+}*/
+/*.green-text-panel {
+	background-color: #458066;
+}*/
+/*.v-space {
+	margin-top: 1.5em;
+}*/
+
+
+
+
+.thumbnail-gallery {
+	background-color: #232b3a;
+	background-image:url(../../img/texture_blue.png);
+	padding: 1.5rem;
+	padding-bottom: 0px;
+}
+div.column.gallery {
+	padding: .5rem 1.5rem 1.5rem 1.5rem;
+	/*padding-right: 1.5rem;*/
+}
+.thumbnail {
+	  border: solid 4px #0f6cdf;
+}
+
+/* styles for the footer */
+.brown-footer {
+	background-color: #403831;
+	background-image:url(../../img/texture_brown.png);
+	padding: 1.5rem;
+	padding-bottom: 0px;
+	color: #a29991;
+	margin-left: -0.9375rem;
+	margin-right: -0.9375rem;
+}
+.brown-footer a {
+	color: #acadab;
+}
+.logo-footer {
+	/*margin-top: -1rem;*/
+	margin-bottom: .5rem;
+}
+a:hover {
+	color: #0f6cdf;
+}
+
+
+/*div.blue-text-panel.medium-4.small-12.columns, div.green-text-panel.medium-4.small-12.columns {
+	padding-left: 0;
+	padding-right: 0;
+}
+*/
+/*.grey-image-panel {
+	background-color: #a7a99b;
+	background-image:url(../img/grey_background.jpg)
+	}*/
+/*p, h3 {
+	padding-right: 10%;
+	padding-left: 10%;
+
+}*/
+/*.main-image-bio p, .main-image-bio h3 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.main-image-bio img {
+	margin: 2%;
+}
+.padding-above-below {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}*/
+/*@media screen and (min-width: 40em) {
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.9375rem; }
+  h4 {
+    font-size: 1.5625rem; }
+  h5 {
+    font-size: 1.25rem; }
+  h6 {
+    font-size: 1rem; } }
+*/
+/*h3 {
+  font-size: 165%;
+  font-family: 'Architects Daughter', cursive;
+}*/
+/*.art img  {
+}*/
+
+/*div.row.main-image-more {
+		padding: 4.5em 0 0 0;
+		margin: 0;
+}
+.main-image-bio {
+		padding: 4.5em 0 0 0;
+}*/
+
+
+/*.contact p a {
+	color: #5e5e5e;
+}
+.contact p a:hover {
+	color: #2D8CD7;
+}
+.contact p {
+	font-size: 125%;
+	padding-right: 2%;
+	padding-left: 5%;
+}
+.contact h3 {
+	padding-right: 2%;
+	padding-left: 5%;
+}*/
+
+
+
+/*.my-name {
+	color: #5e5e5e;
+	float: right;
+	padding: 0 .2em 0 0;
+	font-size: 125%;
+	font-weight: bold;
+}
+*/
+
+
+/*.has-tip {
+	border-bottom: dotted 0px #9c9c9c;
+}*/
+/* images for animation */
+.image-wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+ /* -webkit-box-shadow: 2px 2px 12px 3px rgba(0,0,0,0.25);
+	box-shadow: 2px 2px 12px 3px rgba(0,0,0,0.25);*/
+	}
+
+#image-overlay-content1, #image-overlay-content2, #image-overlay-content3, #image-overlay-content4, #image-overlay-content5, #image-overlay-content6, #image-overlay-content7, #image-overlay-content8, #image-overlay-content9, #image-overlay-content10, #image-overlay-content11, #image-overlay-content12, #image-overlay-content13, #image-overlay-content14, #image-overlay-content15, #image-overlay-content16 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; 
+	transform: translateX(-110%);
+	}
+#image-overlay-content1 {
+		transform: translateX(0px);
+}
+#sizing-image {
+	visibility: hidden;
+}
+
+/* text animation */
+#text-overlay-content1, #text-overlay-content2, #text-overlay-content3, #text-overlay-content4, #text-overlay-content5, #text-overlay-content6, #text-overlay-content7, #text-overlay-content8, #text-overlay-content9, #text-overlay-content10, #text-overlay-content11, #text-overlay-content12, #text-overlay-content13, #text-overlay-content14, #text-overlay-content15, #text-overlay-content16 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; 
+	transform: translateX(-110%);
+	}
+#text-overlay-content1 {
+		transform: translateX(0px);
+}
+#sizing-head, #sizing-body {
+		visibility: hidden;
+}
+div.thumb.column {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+}
+div.thumb.small-10 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/* bit of a kluge, remove the padding so the animation walks in from the edge of the screen. Add it back to the text elements. This is just on the index page*/
+.no-right-pad {
+	padding-right: 0;
+}
+.extra-pad {
+	padding-right: 12%;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+#sizing-anim {
+	display: none;
+}

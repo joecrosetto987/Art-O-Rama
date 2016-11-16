@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link href="css/test_shape.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--<div class="container">
+	<canvas id="headerShape" width="640" height="168"></canvas>
+</div>
+<canvas id="canvas" width="100" height="100"></canvas>-->
+
+
+    <svg  width="640px" height="64px" viewBox="0 0 640 64">
+        <g>
+            <clippath  id="shape-top">
+                <polygon points="0,0,640,0,640,12,0,64,0,0px"></polygon>
+            </clippath>
+        </g>
+        <image   clip-path="url(#shape-top)" width="640" height="834" xlink:href="img/texture_blue.png" preserveAspectRatio="xMidYMin slice"></image>
+    </svg>
+
+
+
+
+</body>
+</html>

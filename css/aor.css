@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+/* styles for whole doc */
+html {
+  overflow-x: hidden;
+}
+.rick-font {
+	font-family: 'Merriweather', serif;
+}
+.aor-font {
+
+font-family: 'Palanquin Dark', sans-serif;
+}
+.aor-font-reg {
+	font-family: 'Palanquin', sans-serif;
+}
+.row {
+	max-width: 90rem;
+}
+.sticky {
+	z-index: 25;
+}
+body {
+  background-color: #222;
+	font-family: 'Palanquin', sans-serif;
+	/*font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;*/
+	font-size: 1.1em;
+	color: #4a4a4a;
+  }
+p {
+	line-height: 1.5;
+}
+.highlight {
+	color: #0f6cdf;
+}
+.v-space-sm {
+	margin-top: .5em;
+}
+.h-space {
+	margin-left: 2rem;
+}
+li.active a {
+	color: #0f6cdf;
+}
+
+div.off-canvas-wrapper  div.off-canvas-content {
+	overflow-y: hidden;
+	background-color: #222;
+}
+div#offCanvasLeft.off-canvas.position-left {
+	background: #222;
+}
+/* styles for header */
+
+div.detail-head-large {
+ 	width: 100%;
+	position: absolute;
+  top: 0;
+	left: 0;
+	max-width: 1440px;
+ z-index: -1;
+}
+.head-logo-lg {
+	padding-top: 1%;
+}
+.head-logo {
+	padding: .05em 0 0 0;
+}
+.head-container {
+  padding: 0;
+	position: relative;
+}
+.cart-br-space {
+	line-height: 25px;
+}
+.cart-v-space {
+	margin-top: 12px;
+}
+.detail-head-menu {
+	text-align: right;
+  color: white;
+}
+.head-menu {
+	list-style-type: none;
+	padding: .05em .5em 0 0;
+	margin: 0;
+}
+.head-menu li {
+	display: inline;
+}
+li a {
+	color: #acadab;
+  padding: 0 .5em 0 .5em;
+} 
+
+/* styles for main content at top, i.e. main image and text description */
+
+.main-row {
+	padding: 4em 0 0 0;
+	background-color: #a7a99b;
+	background-image:url(../img/grey_background.jpg)
+}
+.main-image-panel.columns {
+	padding: 0;
+}
+.arrow {
+  padding: 20%;
+}
+.small-1.column.text-center.divarrow {
+	padding-top: 25%;
+}
+.blue a i {
+	color: #2D8CD7;
+}
+.arrow:hover {
+	color: #2D8CD7;
+}
+.main-image a {
+	color: #5e5e5e;
+}
+
+div.row.main-image {
+	padding: 0;
+	margin: 0;
+}
+
+cite {
+	color: #4a4a4a;
+}
+.add-to-cart-bt {
+	color: #a7a99b;
+	background-color: #4a4a4a;
+	padding: 5px;
+	margin: 1em 0 1em 0;
+	width: 110px;
+	text-align: center;
+	border-radius: 8px;	
+}
+.detail-text a {
+	color: white;
+}
+.detail-text {
+	margin-bottom: 1em;
+}
+.main-image .column {
+	padding: 0;
+}
+#zoom-minus {
+	display: none;
+}
+#zoom-divider {
+	display: none;
+}
+
+/* styles for alternate images */
+.ai img {
+	margin: 10px;
+}
+.image-wrapper .ai img.not-selected {
+	box-shadow: 0 0 3px 2px #737373;
+}
+.image-wrapper .ai img.selected {
+	box-shadow: 0 0 3px 2px #d1d7c4;
+}
+
+.image-wrapper img, #sizing-image {
+	margin: 10px;
+	box-shadow: 0 0 5px 3px #737373;
+	max-width: 95%;
+}
+
+/* styles for secondary content below the fold */
+
+
+.divide-label-lg {
+	position:relative;
+	height: 115px;
+}
+.divide-label-sm {
+	position:relative;
+	height: 50px;
+}
+
+div.divide-bkg {
+z-index: -1;
+}
+div.gallery-divide-bkg {
+/* There is 1.5rem of padding for the gallery section. because this is a row inside a row, 
+ foundation sets the margin to -.9375. but this leave this chunk still pushed a bit to the right
+ this negative margin corrects this. 1.5 - .9375 = .5625 */	
+margin-left: -.5625rem;
+z-index: -1;
+}
+
+div.row.divide-row {
+	position: absolute;
+	top: 0px;
+	color: #ababab;
+	width: 100%;
+	margin: 0;
+}
+
+.divide-content-sm {
+	position:absolute;
+	bottom: -15px;
+}
+.divide-content-lg {
+}
+
+.social-icons-white {
+	margin-left: 2em;
+}
+.social-icons-white a {
+	color: white;
+}
+.social-icons-white a i {
+	padding: 0 1em 0 0 ;	
+}
+.social {
+	margin-top: .4em ;
+	text-align: center;
+}
+.social-icons {
+	float: left;
+}
+.social-icons a i {
+	padding: 0 2em 0 0 ;	
+}
+.social-icons a, .controls a,  footer div p {
+	color: #5e5e5e;
+}
+
+
+
+
+/* styles for the footer */
+.blue-footer {
+	background-color: #232b3a;
+	background-image:url(../img/texture_blue.png);
+	padding: 1.5rem;
+	padding-bottom: 0px;
+	color: #818da5;
+	margin-top: -2px;
+	position: relative;
+}
+div.row.footer-wedge {
+	margin: 0;
+}
+.blue-footer a {
+	color: #acadab;
+}
+.brown-panel {
+	background-color: #403831;
+	background-image:url(../img/texture_brown.png);
+	padding: 1.5rem;
+	padding-bottom: 0px;
+	color: #a29991;
+}
+
+
+.logo-footer {
+	margin-bottom: .5rem;
+}
+a:hover, a .fa-bars:hover{
+	color: #0f6cdf;
+}
+
+
+
+/* bit of a kluge, remove the padding so the animation walks in from the edge of the screen. Add it back to the text elements. This is just on the index page*/
+.no-right-pad {
+	padding-right: 0;
+}
+.extra-pad {
+	padding-right: 12%;
+}
+#sizing-anim {
+	display: none;
+}
+.video video,
+.video canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+ }
+video {
+	width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+}
+
+div.aorhome-neg-space.gallery-divide-bkg {
+	margin-left: 0;
+}
+div.aorhome-neg-space {
+	/*relationship between the width and height of the wedge*/
+	margin-top: -7.986%;
+	padding: 0;
+	padding-bottom: 7.986%; /*this is your height/width ratio*/
+	height: 0;
+	position:relative;
+	/*margin-left: -1px;*/
+
+}
+div.aorhome-neg-space2 {
+	/*relationship between the width and height of the wedge*/
+	margin-top: -7.986%;
+	padding: 0;
+	padding-bottom: 7.986%; /*this is your height/width ratio*/
+	height: 0;
+	position:relative;
+
+}
+
+
+h5.rickhome_gallery_names {
+	color: #ddd;
+	position: absolute;
+	bottom: 8%;
+	width:100%;
+	font-family: 'Merriweather', serif;
+	text-shadow:0px 0px 10px black;
+	-webkit-transition: 0.2s;
+  transition: 0.2s;
+	line-height: 1.2em;
+}
+
+#lamp h5.rickhome_gallery_names {
+	margin-left: -2%;
+}
+.rickhome_gallery {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+	padding: 0;
+}
+.rickhome_gallery_black {
+  background: black;
+  bottom: 0;
+  left: 0;
+  opacity: .15;
+  position: absolute;
+  top: 0;
+  right: 0;
+	-webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#lamp .rickhome_gallery_black {
+	display: none;
+}
+#gallery_name {
+	margin-top: -5%;
+}
+#gallery_name h4 {
+	line-height: 1.2em;
+}
+.aorhome_left_panel {
+	background-color: #232b3a;
+	background-image:url(../img/texture_blue.png);
+	padding: 0;
+	padding-top: 3%;
+}
+.aorhome_right_panel {
+	background-color: #403831;
+	background-image:url(../img/texture_brown.png);
+}
+.fa-bars {
+	margin-top: 1.5em;
+	color: #5e5e5e;
+}
+.aorhome-welcome {
+	background-color: #7e827a;
+	background-image:url(../img/texture_grey.png);
+	padding: 0 1.5rem 0 1.5rem;
+	color: black;
+}
+svg {
+	display: block;
+}
+.exhibit-name {
+	color: #0f6cdf;
+	margin-top: -60%;
+	position: relative;
+	z-index: 5;
+	font-size: 4vw;
+	line-height: 1em;
+}
+.exhibit-name a {
+color: #0f6cdf;
+}
+.copyright {
+	color: #404b60;
+}
+.upcoming img {
+	padding: 5% 25% 0 25%;
+}
+
+.head-svg-container {
+    padding-bottom: 11.5972%; /*this is your height/width ratio*/
+    height: 0;
+		position:relative;
+		margin-left: 0;
+  }
+.head-svg-container svg, .aorhome-neg-space svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+div.row.margin-zero {
+	margin: 0;
+}
+div.padding-zero {
+	padding: 0;
+}
+.aorhome-zindex-adjust {
+	position: relative;
+	z-index: 3;
+}
+.contact-main {
+	font-size: 1.3em;
+	background-color: #a7a99b;
+	background-image:url(../img/grey_background.jpg);
+	padding-top: 15%;
+	padding-bottom: 10%;
+}
+.contact-main a {
+	color: #4a4a4a;
+}
+.contact-main a:hover {
+	color: #0f6cdf;
+}
+.contact-main img {
+	margin: 0 0 20px 20px;
+}
