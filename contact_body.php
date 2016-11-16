@@ -72,11 +72,69 @@
 			
 			
 			<div class="row margin-zero main-image-more contact-main">
-	<div class="contact small-offset-1 small-10 end column">
+				<div class="contact small-offset-1 small-10 end column">
 <h3 class="aor-font">Contact Us</h3>
-<p>We would love to hear from you!</p><br>
-<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i></a>&nbsp;&nbsp;info@aor.gallery</p>
-<p><a href="tel:815-474-0629" target="_top"><i class="fa fa-phone fa-lg"></i></a>&nbsp;&nbsp; 815-474-0629</p>
+<p>We would love to hear from you!</p>
+<!--<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i></a>&nbsp;&nbsp;info@aor.gallery</p>-->
+<?php
+
+// THE BELOW LINE STATES THAT IF THE SUBMIT BUTTON
+// WAS PUSHED, EXECUTE THE PHP CODE BELOW TO SEND THE 
+// MAIL. IF THE BUTTON WAS NOT PRESSED, SKIP TO THE CODE
+// BELOW THE "else" STATEMENT (WHICH SHOWS THE FORM INSTEAD).
+if (isset($_POST['submit'])) {
+	// Validation
+$required_fields = array("Name", "Email");
+validate_presences($required_fields);
+
+if (empty($errors)) {
+	// REPLACE THE LINE BELOW WITH YOUR E-MAIL ADDRESS.
+	$to = 'joecrosetto987@gmail.com' ;
+	$subject = 'From AOR contact page' ;
+	
+	// NOT SUGGESTED TO CHANGE THESE VALUES
+	$message = 'Name: ' . $_POST [ "Name" ] . "\n";
+	$message .= 'Email: ' . $_POST [ "Email" ] . "\n";
+	$message .= 'Phone: ' . $_POST [ "Phone" ] . "\n";
+	$message .= 'Message: ' . $_POST [ "form-message"] . "\n";
+	$headers = 'From: ' . $_POST[ "form-email" ] . PHP_EOL ;
+	mail ( $to, $subject, $message, $headers ) ;
+	
+	// THE TEXT IN QUOTES BELOW IS WHAT WILL BE 
+	// DISPLAYED TO USERS AFTER SUBMITTING THE FORM.
+	$success = "Your message has been sent! You should receive a reply within 24 hours!" ;
+		} // end of if empty errors
+ } // end of if submit
+?>
+	<div class="select-box text-left">
+	<?php	if (!empty($success)) {
+			echo "<div class=\"message\">" . htmlentities($success) . "</div>";
+		};
+		?>
+		<?php echo  form_errors($errors) ; ?>
+
+				
+		<form action="<?php echo $_SERVER [ 'PHP_SELF' ] ; ?>" method="post"> 
+			<p>* Name:<br>
+				<input type="text" name="Name"  value="<?php if (isset($_POST['Name'])) {echo $_POST['Name']; };?>" />
+				</label></p>
+			<p>* Email:<br>
+				<input type="text" name="Email"  value="<?php if (isset($_POST['Email'])) {echo $_POST['Email']; };?>" />
+				</label></p>
+			<p>Phone:<br>
+				<input type="text" name="Phone"  value="<?php if (isset($_POST['Phone'])) {echo $_POST['Phone']; };?>" />
+				</label></p>
+			
+			<p>Message:
+			<textarea name="form-message" class="textbox"><?php if (isset($_POST['form-message'])) {echo $_POST['form-message']; };?></textarea></p>
+			
+			<div class="center_me"><input  name="submit" type="submit" value="Submit" /></div>
+		
+		</form>
+</div>
+<br>
+
+<p><a href="tel:815-474-0629" target="_top"><i class="fa fa-phone fa-lg"></i><span class="phone">&nbsp;&nbsp; 815-474-0629</span></a></p>
 <!--<p><a href="https://www.facebook.com/joecrosettoart" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Post comments and Like me on my Facebook Page</p>
 <p><a href="https://twitter.com/intent/follow?screen_name=@JosephCrosetto" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;Follow me on Twitter</p>--><br>
 			</div>
