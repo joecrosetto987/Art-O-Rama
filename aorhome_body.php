@@ -160,7 +160,7 @@
 		
 		This is the place to buy stupendous, one-of-a-kind art at a fair price.<br>&nbsp;<br>
 		
-		What makes an artist tick? Watch our video interviews and find out!<br>&nbsp;<br>&nbsp;<br>
+		What makes an artist tick? Watch our video interviews and find out!<br>&nbsp;<br><a href="rick/worlds.php">Rick Therrio Interview</a> (1 of 7)<br>&nbsp;<br> Video interviews are available at the beginning of each gallery in the exhibit.<br>&nbsp;<br>&nbsp;<br>
 					</p>
 				</div>
 			
