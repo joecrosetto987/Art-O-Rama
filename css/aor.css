@@ -36,6 +36,9 @@ p {
 .v-space-sm {
 	margin-top: .5em;
 }
+.v-space-lg {
+	margin-top: 1em;
+}
 .h-space {
 	margin-left: 2rem;
 }
@@ -432,6 +435,19 @@ div.padding-zero {
 .contact-main a:hover {
 	color: #0f6cdf;
 }
+.contact-options {
+	background-color: #7e827a;
+	background-image:url(../img/texture_grey.png);
+	padding: 0 1.5rem 0 1.5rem;
+	color: black;
+}
+
+.contact-options a {
+	color: black;
+}
+.contact-options a:hover {
+	color: black;
+}
 .contact-main img {
 	margin: 0 0 20px 20px;
 }
@@ -478,7 +494,7 @@ input[type=submit]:hover, input[type=submit]:focus {
 	text-align: center;
 }
 .phone {
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 .error, .message{
 	width:100%;

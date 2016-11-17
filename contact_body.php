@@ -74,7 +74,10 @@
 			<div class="row margin-zero main-image-more contact-main">
 				<div class="contact small-offset-1 small-10 end column">
 <h3 class="aor-font">Contact Us</h3>
-<p>We would love to hear from you!</p>
+<p>Art-O-Rama is online only. We have no store you can visit. Below is our mailing address.<br />&nbsp;<br />
+If you come here you will only find an old man in his underwear pecking away at a computer. 
+Probably better to send a message.
+</p>
 <!--<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i></a>&nbsp;&nbsp;info@aor.gallery</p>-->
 <?php
 
@@ -93,16 +96,22 @@ if (empty($errors)) {
 	$subject = 'From AOR contact page' ;
 	
 	// NOT SUGGESTED TO CHANGE THESE VALUES
-	$message = 'Name: ' . $_POST [ "Name" ] . "\n";
-	$message .= 'Email: ' . $_POST [ "Email" ] . "\n";
-	$message .= 'Phone: ' . $_POST [ "Phone" ] . "\n";
-	$message .= 'Message: ' . $_POST [ "form-message"] . "\n";
-	$headers = 'From: ' . $_POST[ "form-email" ] . PHP_EOL ;
+	$message = 'Name: ' . $_POST ["Name"] . "\n";
+	$message .= 'Email: ' . $_POST ["Email"] . "\n";
+	$message .= 'Phone: ' . $_POST ["Phone"] . "\n";
+	$message .= 'Message: ' . $_POST ["form-message"] . "\n";
+	$headers = 'From: ' . $_POST["Email"] . PHP_EOL ;
 	mail ( $to, $subject, $message, $headers ) ;
 	
 	// THE TEXT IN QUOTES BELOW IS WHAT WILL BE 
 	// DISPLAYED TO USERS AFTER SUBMITTING THE FORM.
 	$success = "Your message has been sent! You should receive a reply within 24 hours!" ;
+	// set form fields to blank
+	$_POST["Name"] = "";
+	$_POST["Email"] = "";
+	$_POST["Phone"] = "";
+	$_POST["form-message"];
+	
 		} // end of if empty errors
  } // end of if submit
 ?>
@@ -116,17 +125,17 @@ if (empty($errors)) {
 				
 		<form action="<?php echo $_SERVER [ 'PHP_SELF' ] ; ?>" method="post"> 
 			<p>* Name:<br>
-				<input type="text" name="Name"  value="<?php if (isset($_POST['Name'])) {echo $_POST['Name']; };?>" />
+				<input type="text" name="Name"  value="<?php if (isset($_POST["Name"])) {echo htmlentities($_POST["Name"]); };?>" />
 				</label></p>
 			<p>* Email:<br>
-				<input type="text" name="Email"  value="<?php if (isset($_POST['Email'])) {echo $_POST['Email']; };?>" />
+				<input type="text" name="Email"  value="<?php if (isset($_POST["Email"])) {echo htmlentities($_POST["Email"]); };?>" />
 				</label></p>
 			<p>Phone:<br>
-				<input type="text" name="Phone"  value="<?php if (isset($_POST['Phone'])) {echo $_POST['Phone']; };?>" />
+				<input type="text" name="Phone"  value="<?php if (isset($_POST["Phone"])) {echo htmlentities($_POST["Phone"]); };?>" />
 				</label></p>
 			
 			<p>Message:
-			<textarea name="form-message" class="textbox"><?php if (isset($_POST['form-message'])) {echo $_POST['form-message']; };?></textarea></p>
+			<textarea name="form-message" class="textbox"><?php if (isset($_POST["form-message"])) {echo htmlentities($_POST["form-message"]); };?></textarea></p>
 			
 			<div class="center_me"><input  name="submit" type="submit" value="Submit" /></div>
 		
@@ -134,7 +143,7 @@ if (empty($errors)) {
 </div>
 <br>
 
-<p><a href="tel:815-474-0629" target="_top"><i class="fa fa-phone fa-lg"></i><span class="phone">&nbsp;&nbsp; 815-474-0629</span></a></p>
+
 <!--<p><a href="https://www.facebook.com/joecrosettoart" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Post comments and Like me on my Facebook Page</p>
 <p><a href="https://twitter.com/intent/follow?screen_name=@JosephCrosetto" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;Follow me on Twitter</p>--><br>
 			</div>
@@ -229,15 +238,16 @@ if (empty($errors)) {
 	</div>
 
 			<div class="row">
-				<div class="aorhome-welcome small-12 columns">
+				<div class="contact-options small-12 columns">
 					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br></p>
-					<h5 class="aor-font">Welcome!</h5>
-					<p>Art-O-Rama gallery is a cooperative, online behemoth promoting the world’s greatest artists.<br>&nbsp;<br> 
+					<h5 class="aor-font">Other Options</h5>
+					<p class="v-space-lg"><a href="tel:815-474-0629" target="_top"><i class="fa fa-phone fa-lg"></i><span class="phone">&nbsp;&nbsp; 815-474-0629</span></a></p>
+					<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i><span class="phone">&nbsp;&nbsp;info@aor.gallery</span></a></p>
+					<p class="phone"><img src="img/snail.png" width="30" height="21">&nbsp;&nbsp;Art-O-Rama<br>
+						126 Francisco Terrace<br>Oak Park, IL 60302</p>
 		
-		This is the place to buy stupendous, one-of-a-kind art at a fair price.<br>&nbsp;<br>
-		
-		What makes an artist tick? Watch our video interviews and find out!<br>&nbsp;<br>&nbsp;<br>
-					</p>
+		<br>&nbsp;<br>
+					
 				</div>
 			
 
