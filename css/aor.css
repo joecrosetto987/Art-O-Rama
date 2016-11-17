@@ -380,9 +380,9 @@ h5.rickhome_gallery_names {
 }
 .aorhome-welcome a {
 	color: #ddd;
-	padding-left: .5em;
-	padding-right: .5em;
-	border-radius: 3px;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 5px;
 }
 .aorhome-welcome a:hover {
 	background-color: #2461ad;
@@ -398,9 +398,23 @@ svg {
 	z-index: 5;
 	font-size: 4vw;
 	line-height: 1em;
+	box-shadow: 0px 2px 0px #b4b1b1;
+  background-color: rgba(255,255,255,0.7);
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 10px;
+	border-radius: 10px;
+  padding-top: 5px;
+}
+.exhibit-name:hover {
+	box-shadow: 0px 2px 0px #888;
+  background-color: rgba(255,255,255,1);
+}
+.exhibit-name img {
+	margin-top: -5px;
 }
 .exhibit-name a {
-color: #0f6cdf;
+	color: #0f6cdf;
 }
 .copyright {
 	color: #667d9b;
