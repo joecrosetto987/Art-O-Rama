@@ -378,6 +378,16 @@ h5.rickhome_gallery_names {
 	padding: 0 1.5rem 0 1.5rem;
 	color: black;
 }
+.aorhome-welcome a {
+	color: #ddd;
+	padding-left: .5em;
+	padding-right: .5em;
+	border-radius: 3px;
+}
+.aorhome-welcome a:hover {
+	background-color: #2461ad;
+}
+
 svg {
 	display: block;
 }
@@ -393,7 +403,7 @@ svg {
 color: #0f6cdf;
 }
 .copyright {
-	color: #404b60;
+	color: #667d9b;
 }
 .upcoming img {
 	padding: 5% 25% 0 25%;
