@@ -40,6 +40,7 @@
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="about.php">About</a></li>
 					<li><a href="contact.php">Contact</a></li>
+					<!--<li><a href="rick/index.php">Exhibit</a></li>-->
 					<!--<li><a href="bio.html">Joe's Bio</a></li>
 					<li><a href="intro.html">Intro</a></li>-->
 				</ul>
@@ -57,6 +58,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="about.php">About</a></li>
 					<li><a href="contact.php">Contact</a></li>
+					<li><a href="rick/index.php">Current Exhibit</a></li>
 					<!--<li><a href="bio.html">Joe's Bio</a></li>
 					<li><a href="intro.html">Intro</a></li> -->
       </ul>
@@ -72,7 +74,7 @@
 					<a href="rick/index.php"><img src="img/aorhome_rick.jpg"></a>
 					<div class="exhibit-name rick-font text-center small-6 small-offset-6 columns">
 						<a href="rick/index.php">Rick Therrio</a>
-						<a href="rick/index.php"><img src="img/aorhome_existence.png"></a>
+						<a href="rick/index.php"><img src="img/aorhome_existence.gif"></a>
 					</div>
 				</div>
 			</div>
@@ -160,7 +162,7 @@
 		
 		This is the place to buy stupendous, one-of-a-kind art at a fair price.<br>&nbsp;<br>
 		
-		What makes an artist tick? Watch our video interviews and find out!<br>&nbsp;<br><a href="rick/worlds.php">Rick Therrio Interview</a> (1 of 7)<br>&nbsp;<br> Video interviews are available at the beginning of each gallery in the exhibit.<br>&nbsp;<br>&nbsp;<br>
+		What makes an artist tick? Watch our video interviews and find out! <br><a href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br> Video interviews play at the beginning of each gallery in the exhibit.<br>&nbsp;<br>&nbsp;<br>
 					</p>
 				</div>
 			
