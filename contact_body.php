@@ -76,7 +76,7 @@
 				<div class="contact small-offset-1 small-10 end column">
 <h3 class="aor-font">Contact Us</h3>
 <p>Art-O-Rama is online only. We have no store you can visit. Below is our mailing address.<br />&nbsp;<br />
-If you come here you will only find an old man in his underwear pecking away at a computer. 
+If you come here you will only find a weird guy pecking away at a computer. 
 Probably better to send a message.
 </p>
 <!--<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i></a>&nbsp;&nbsp;info@aor.gallery</p>-->

@@ -75,7 +75,7 @@
 			<div class="row margin-zero main-image-more contact-main">
 	<div class="contact small-offset-1 small-10 end column">
 <h3 class="aor-font">About Us</h3>
-<p><img src="img/about_aor.jpg" width="450" height="266" class="float-right">Lynn True and Joe Crosetto started the original Art-O-Rama Gallery 1989. It was located in an old bakery at 3039 Irving Park Rd in Chicago. We wanted to shake up the art establishment and surprisingly, we did. We invited our young, artist friends to show their work. Most of us were all effectively shut out from the established River North galleries. We built walls, hung clip-on lights and made quite a presentable gallery space. Openings nights were packed with people and artwork. Word spread. A group of artists coalesced around the gallery and have become lifelong friends and collaborators.<br>&nbsp;<br>
+<p><img src="img/about_aor.jpg" width="450" height="266" class="float-right">Lynn True and Joe Crosetto started the original Art-O-Rama Gallery 1989. It was located in an old bakery at 3039 Irving Park Rd in Chicago. We wanted to shake up the art establishment and surprisingly, we did. We invited our young artist friends to show their work. Most of us were all effectively shut out from the established River North galleries. We built walls, hung clip-on lights and made quite a presentable gallery space. Openings nights were packed with people and artwork. Word spread. A group of artists coalesced around the gallery and have become lifelong friends and collaborators.<br>&nbsp;<br>
 
 The original Art-O-Rama was like a super nova. It burnt bright but for only about 2 years. But don't fret because now we have opened a new, online version of the gallery, inspired by the same passion and craziness! Enjoy!</p><br>
 <br>
