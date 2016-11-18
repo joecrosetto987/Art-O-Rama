@@ -57,6 +57,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="about.php">About</a></li>
 					<li><a href="contact.php">Contact</a></li>
+					<li><a href="rick/index.php">Current Exhibit</a></li>
 					<!--<li><a href="bio.html">Joe's Bio</a></li>
 					<li><a href="intro.html">Intro</a></li> -->
       </ul>

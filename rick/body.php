@@ -43,8 +43,8 @@
 					<li><a href="bio.html">Joe's Bio</a></li>
 					<li><a href="intro.html">Intro</a></li>
 				</ul>-->
-				<!--<br class="show-for-medium-only cart-br-space">
-        <a href="#" class="highlight"><i class="fa fa-shopping-cart cart-v-space"></i> checkout</a>-->
+				<!--<br class="show-for-medium-only cart-br-space">-->
+        <a href="#"><i class="show-for-small-only fa fa-bars" data-open="offCanvasLeft"></i></a>
 			</div> 
   
 
@@ -53,11 +53,12 @@
 </div>
 <!--The Menu that slides in from the left on a phone	-->								
 
-	<!-- <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+	<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
       <ul class="vertical dropdown menu" data-dropdown-menu>
-					<li><a href="index.html">More Art</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="bio.html">Joe's Bio</a></li>
+					<li><a href="../index.php">Home</a></li>
+					<li><a href="../about.php">About</a></li>
+					<li><a href="../contact.php">Contact</a></li>
+					<li><a href="index.php">Rick Therrio Galleries</a></li>
 			<!--		<li><a href="intro.html">Intro</a></li> -->
       </ul>
     </div>
@@ -69,7 +70,7 @@
 
 <div class="row">
 	<div class="small-12 columns ">
-		<h4 class="rick-font text-right"><a href="index.php"><span class="highlight"><?php echo ARTIST ?> </span></a> &#8250; <?php echo GALLERY_NAME ?></h4>
+		<h4 class="gallery-name rick-font text-right"><a href="index.php"><?php echo ARTIST ?></a> &#8250; &nbsp;<?php echo GALLERY_NAME ?></h4>
 	</div>
 </div>
 
@@ -331,7 +332,7 @@
 	<div class="row">
 		<div class="small-12 medium-7 medium-push-2 columns">
 			<div class="row">
-				<h5 class="rick-font text-center">Rick Therrio Galleries</h5>
+				<h5 class="rick-font text-center"><a href="index.php">Rick Therrio Galleries</a></h5>
 				<div class="small-5   medium-5  large-offset-1 large-4 columns">
 					<p><a href="worlds.php">Micro Worlds</a><br>
 						 <a href="rp.php">Rick & Pete</a><br>
@@ -355,7 +356,9 @@
 		</div>
 		<div class="small-6 medium-3 columns text-center">
 			<a href="../index.php"><img src="../img/aor_logo_brown_sm.png" class="logo-footer"></a><br>
-			<a href="../index.php">Art-O-Rama Home</a>
+			<a href="../index.php">Home</a><br>
+			<a href="../contact.php">Contact</a><br>
+			<a href="../about.php">About</a>
 		</div>
 	</div>	
 
