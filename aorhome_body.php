@@ -72,7 +72,7 @@
 			<div class="row margin-zero">
 				<div class="small-12 columns padding-zero">
 					<a href="rick/index.php"><img src="img/aorhome_rick.jpg"></a>
-					<div class="exhibit-name rick-font text-center small-6 small-offset-6 columns">
+					<div class="exhibit-name rick-font text-center small-5 small-offset-7 columns">
 						<a href="rick/index.php">Rick Therrio</a>
 						<a href="rick/index.php"><img src="img/aorhome_existence.gif"></a>
 					</div>
@@ -158,11 +158,13 @@
 				<div class="aorhome-welcome small-12 columns">
 					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br></p>
 					<h5 class="aor-font">Welcome!</h5>
-					<p>Art-O-Rama gallery is a cooperative, online behemoth promoting the world’s greatest artists.<br>&nbsp;<br> 
+					<p>I hope you are stoked to see the first exhibit at Art-O-Rama online gallery. You will laugh. You will cry. You will shake your head in disbelief at Rick’s stunning work.<br>
+<a href="rick/index.php">Rick Terrio – Existence is Absurd</a><br>&nbsp;<br>
+
+Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art at a fair price. And more!
+<br>&nbsp;<br>
 		
-		This is the place to buy stupendous, one-of-a-kind art at a fair price.<br>&nbsp;<br>
-		
-		What makes an artist tick? Watch our video interviews and find out! <br><a href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br> Video interviews play at the beginning of each gallery in the exhibit.<br>&nbsp;<br>&nbsp;<br>
+		What makes an artist tick? Watch our video interviews and find out! <br><a href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br>&nbsp;<br>
 					</p>
 				</div>
 			
