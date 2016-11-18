@@ -19,7 +19,7 @@ font-family: 'Palanquin Dark', sans-serif;
 }
 body {
   background-color: #222;
-	font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
+	font-family: 'Palanquin', sans-serif;
 	color: #4a4a4a;
   }
 .highlight {
@@ -75,7 +75,7 @@ div.detail-head-large {
 	display: inline;
 }
 li a {
-	color: white;
+	color: #ababab;
   padding: 0 .5em 0 .5em;
 } 
 
@@ -89,6 +89,16 @@ li a {
 }
 .main-image-panel.columns {
 	padding: 0;
+}
+.gallery-name a {
+	color: #0f6cdf;
+	padding-left: .5em;
+	padding-right: .5em;
+	border-radius: 5px;
+}
+.gallery-name a:hover {
+	color: #eee;
+	background-color: #0f6cdf;
 }
 .arrow {
   padding: 20%;
@@ -266,7 +276,14 @@ div.column.gallery {
 .logo-footer {
 	margin-bottom: .5rem;
 }
-a:hover {
+.fa-bars {
+	color: #ababab;
+}
+.fa-bars:hover{
+	color: #0f6cdf;
+}
+
+a:hover, a .fa-bars:hover{
 	color: #0f6cdf;
 }
 
