@@ -373,18 +373,37 @@ h5.rickhome_gallery_names {
 	color: #5e5e5e;
 }
 .aorhome-welcome {
+	background-color: #a7a99b;
+	background-image:url(../img/grey_background.jpg);
+
+	/*background-color: #7e827a;
+	background-image:url(../img/texture_grey.png);*/
+	padding: 0 1.5rem 0 1.5rem;
+/*	color: black;*/
+}
+.aorhome-welcome a {
+	color: #eee;
+/*	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 5px;*/
+}
+.aorhome-welcome a:hover {
+	/*background-color: #2461ad;*/
+	color: #0f6cdf;
+}
+.about-welcome {
 	background-color: #7e827a;
 	background-image:url(../img/texture_grey.png);
 	padding: 0 1.5rem 0 1.5rem;
 	color: black;
 }
-.aorhome-welcome a {
+.about-welcome a {
 	color: #ddd;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: .2em;
+	padding-right: .2em;
 	border-radius: 5px;
 }
-.aorhome-welcome a:hover {
+.about-welcome a:hover {
 	background-color: #2461ad;
 }
 

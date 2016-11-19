@@ -759,31 +759,28 @@ function twitterShare() {
     //Open the window.
 		window.open("https://twitter.com/intent/tweet?text=Please%20look%20at%20Joe%20Crosetto's%20art:&url=" + location.protocol+"//"+location.host+location.pathname + "&via=JosephCrosetto", "", "width=550,height=420,resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
 }
-function pinterestShare() {
-	var nextImageID = "image" + curImageNum;
-	var nextImage = document.getElementById(nextImageID);
-	var nextImagePath = nextImage.src; 
-	var nip = nextImagePath.split(/[\/\\\.\_]/);
-	var appFolder = nip[nip.length - 5];	
-	var imgFolder = nip[nip.length - 4];
-	//var nextImageName = nip[nip.length - 3];
-	//var nextImageExt = nip[nip.length - 1];
-
-	var imageFileName;
-	if(nextImage.nodeName.toLowerCase() === "video") {
-	//	if (nextImageExt === "mp4" || nextImageExt === "MP4") {	
-		imageFileName = "http://" + location.hostname + "/" + appFolder + "/" + imgFolder + "/" + vidSizingPrefix + vidSizingName + "a" + "_sm" + "." + vidSizingExt;
-	} else {
-		imageFileName = nextImagePath;
-	}
-
-	
-	
-    var leftPosition, topPosition;
-    //Allow for borders.
-    leftPosition = (window.screen.width / 2) - 385;
-    //Allow for title and status bars.
-    topPosition = (window.screen.height / 2) - 220;
-    //Open the window.
-		window.open("http://pinterest.com/pin/create/button/?url=" + location.protocol+"//"+location.host+location.pathname + "&media=" + imageFileName + "&description=Please%20look%20at%20Joe%20Crosetto's%20art!", "", "width=550,height=420,resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
-}
+//function pinterestShare() {
+//	var nextImageID = "image" + curImageNum;
+//	var nextImage = document.getElementById(nextImageID);
+//	var nextImagePath = nextImage.src; 
+//	var nip = nextImagePath.split(/[\/\\\.\_]/);
+//	var appFolder = nip[nip.length - 5];	
+//	var imgFolder = nip[nip.length - 4];
+//	
+//	var imageFileName;
+//	if(nextImage.nodeName.toLowerCase() === "video") {
+//		imageFileName = "http://" + location.hostname + "/" + appFolder + "/" + imgFolder + "/" + vidSizingPrefix + vidSizingName + "a" + "_sm" + "." + vidSizingExt;
+//	} else {
+//		imageFileName = nextImagePath;
+//	}
+//
+//	
+//	
+//    var leftPosition, topPosition;
+//    //Allow for borders.
+//    leftPosition = (window.screen.width / 2) - 385;
+//    //Allow for title and status bars.
+//    topPosition = (window.screen.height / 2) - 220;
+//    //Open the window.
+//		window.open("http://pinterest.com/pin/create/button/?url=" + location.protocol+"//"+location.host+location.pathname + "&media=" + imageFileName + "&description=Please%20look%20at%20Joe%20Crosetto's%20art!", "", "width=550,height=420,resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+//}
