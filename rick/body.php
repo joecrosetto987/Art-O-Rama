@@ -125,6 +125,14 @@
 						</div>
 							
 							<?php } ?>
+							
+							
+					<!-- this is a final slide that thanks visitors and asks them to go to the rick home page -->
+						<?php $img_count ++; ?>
+						<div id="image-overlay-content<?php echo $img_count; ?>">
+						<img id="image<?php echo $img_count; ?>" data-interchange="[img/<?php echo FILENAME_PREFIX; ?><?php echo $img_count; ?>a_sm.jpg, small], [img/<?php echo FILENAME_PREFIX; ?><?php echo $img_count; ?>a_lg.jpg, medium]" alt="<?php echo ARTIST; ?>">
+						</div>	
+							
 						
 					</div>
 					<a href="#" id="zoom-minus"><i class="fa fa-search-minus fa-lg v-space-sm"></i></a>
@@ -242,17 +250,41 @@
 </div>
 <?php } ?>
 
-<!--
-<div id="text-overlay-content16" class="no-right-pad">
-					<h3 id="overlay-head16">Thanks for Visiting</h3>
-			    <div id="overlay-body16" class="detail-text"><a href="index.html"><i class="fa fa-th fa-lg"></i></a>&nbsp;&nbsp;See more of Rick's Art! <br>
+<?php $text_count ++; ?>
+<div id="text-overlay-content<?php echo $text_count; ?>" class="text-center">
+					<h5 id="overlay-head<?php echo $text_count; ?>" class="rick-font">But wait. There's more!</h5>
+			    <div id="overlay-body<?php echo $text_count; ?>" class="detail-text">
+					<div class="detail-more-text">
+
+					<p>Visit all seven of Rick's galleries. The next one is even better!</p>
+			    <h5><a href="index.php"><!--<i class="fa fa-th fa-lg"></i>--><span class="rick-font">Rick Therrio Galleries</span></a></h5> 
 					<i class="fa fa-share-alt fa-lg v-space-sm"></i>&nbsp;&nbsp;Share on social media<br>
-					<span class="social-icons-white">
+					<span class="social-icons-space">
 				<a class="fb-icon" href="#"><i class="fa fa-facebook fa-lg v-space-sm"></i></a>
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg v-space-sm"></i></a>
-				<a class="pinterest-icon" href="#"><i class="fa fa-pinterest-p fa-lg v-space-sm"></i></a> </span><br>		
-				</div>		
-</div> -->
+				<!--<a class="pinterest-icon" href="#"><i class="fa fa-pinterest-p fa-lg v-space-sm"></i></a>--> </span><br>
+				</div>
+				<div class=" detail-text rick-credit text-left">
+				Check out some of Rick's cool music projects:
+				<ul>
+					<li><a href="http://thefactoriesoflove.bandcamp.com/" target="_blank">Factories of Love</a></li>
+					<li><a href="http://kalejutandhismurdermen.bandcamp.com/" target="_blank">Kale Jut and the Murdermen</a></li>
+					<li><a href="https://www.facebook.com/hereinliestherub/?fref=ts" target="_blank">The Rub</a></li>
+				</ul>
+				Rick would like to thank some special people:
+				<ul>
+					<li>Dave Mueller at <a href="https://www.facebook.com/search/184404196644/local_search?surface=tyah" target="_blank">Paul Henry Gallery</a></li>
+					<li>Tony Lipka at <a href="http://greatcustomframing.com/" target="_blank">The Great Frame Up</a></li>
+					<li>Barbara Laing at Painted Light Photography & Framing Gallery</li>
+				</ul>	
+
+				</div>
+			</div>	
+</div>
+
+
+
+
 
       </div>
 		</div>
@@ -303,6 +335,12 @@
 <a href="#" class="tb" id="tb<?php echo $img_count; ?>"><img class="not-viewed" src="img/<?php echo FILENAME_PREFIX; ?><?php echo $img_count; ?>a_tb.jpg"></a>
 </div>
 <?php } ?>
+
+<!-- thank You Slide -->
+<?php $img_count ++; ?>
+<div class="column gallery">
+<a href="#" class="tb" id="tb<?php echo $img_count; ?>"><img class="not-viewed" src="img/<?php echo FILENAME_PREFIX; ?><?php echo $img_count; ?>a_tb.jpg"></a>
+</div>
 
 			</div> <!-- end of thumbnail gallery. Note, start of brown section below inside-->
 

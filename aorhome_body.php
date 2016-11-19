@@ -149,7 +149,7 @@
                 <polygon points="0,0,1440,115,0,115,0,0"></polygon>
             </clippath>
         	</g>
-        	<image   clip-path="url(#shape-divide4)" width="1440" height="764" xlink:href="img/texture_grey.png" preserveAspectRatio="xMidYMin slice"></image>
+        	<image   clip-path="url(#shape-divide4)" width="1440" height="764" xlink:href="img/grey_background.jpg" preserveAspectRatio="xMidYMin slice"></image>
     		</svg>
 			</div>
 	</div>
@@ -159,12 +159,12 @@
 					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br></p>
 					<h5 class="aor-font">Welcome!</h5>
 					<p>I hope you are stoked to see the first exhibit at Art-O-Rama online gallery. You will laugh. You will cry. You will shake your head in disbelief at Rick’s stunning work.<br>
-<a href="rick/index.php">Rick Terrio – Existence is Absurd</a><br>&nbsp;<br>
+<a class="rick-font" href="rick/index.php">Rick Terrio – Existence is Absurd</a><br>&nbsp;<br>
 
-Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art at a fair price. And more!
+Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art. And more!
 <br>&nbsp;<br>
 		
-		What makes an artist tick? Watch our video interviews and find out! <br><a href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br>&nbsp;<br>
+		What makes an artist tick? Watch our video interviews and find out! <br><a class="rick-font" href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br>&nbsp;<br>
 					</p>
 				</div>
 			

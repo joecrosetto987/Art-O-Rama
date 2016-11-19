@@ -133,10 +133,42 @@ cite {
 	text-align: center;
 	border-radius: 8px;	
 }
+/* detail text is the styles for the text loaded from the db that apears to the left or below the art image */
 .detail-text a {
-	color: white;
+	color: #ddd;
 }
 .detail-text {
+	margin-bottom: 1em;
+}
+.detail-text a:hover {
+	color: #0f6cdf;
+}
+/* a few special styles for the last page of ricks galleries */
+.rick-credit {
+	font-size: .9em;
+}
+.rick-credit ul {
+	list-style-type: square;
+}
+.rick-credit a {
+	padding: 0;
+}
+/*.rick-credit a:hover {
+	color: #0f6cdf;
+	background-color: rgba(255, 255, 255, 0.0);
+}*/
+/* detail-more-text is special styles for the last slide on a page that has links to social media, etc. */
+.detail-more-text a {
+	color: #0f6cdf;
+	padding: .5em;
+	border-radius: 5px;
+}
+.detail-more-text a:hover {
+	color: #eee;
+	background-color: #0f6cdf;
+}
+
+.detail-more-text {
 	margin-bottom: 1em;
 }
 .main-image .column {
@@ -215,14 +247,14 @@ div.row.divide-row {
 	margin-bottom: 0;
 }
 
-.social-icons-white {
+/*.social-icons-space {
 	margin-left: 2em;
-}
-.social-icons-white a {
+}*/
+/*.social-icons-white a {
 	color: white;
-}
-.social-icons-white a i {
-	padding: 0 1em 0 0 ;	
+}*/
+.social-icons-space a i {
+	padding: 0 .5em 0 .5em ;	
 }
 .social {
 	margin-top: .4em ;
