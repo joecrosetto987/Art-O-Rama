@@ -176,7 +176,7 @@ The original Art-O-Rama was like a super nova. It burnt bright but for only abou
 					<h5 class="aor-font">Now</h5>
 					<p>Art-O-Rama gallery is an online gallery featuring the world’s greatest artists.<br>&nbsp;<br>
 					
-					Visiting a gallery or museum should be transcendental experience where the visitor gets swept up in the passion of the artist. Can you have a similar experience on a website? This is our goal. Please keep visiting and watch how we evolve. And <a href="contact.php">please share</a> your thoughts and ideas with us.<br>&nbsp;<br>&nbsp;<br>
+					Visiting a gallery or museum should be a transcendental experience where the visitor gets swept up in the passion of the artist. Can you have a similar experience on a website? This is our goal. Please keep visiting and watch how we evolve. And <a href="contact.php">please share</a> your thoughts and ideas with us.<br>&nbsp;<br>&nbsp;<br>
 					</p>
 				</div>
 			
