@@ -7,11 +7,11 @@
 <meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,painting,watercolor,oil,chicago">
 <meta name="author" content="Art-O-Rama">
 <meta property="og:title" content="Art-O-Rama Gallery" />
-<meta property="og:description" content="Art-O-Rama Gallery" />
-<meta property="og:type" content="video.movie" />
-<meta property="og:url" content="http://aor.gallery/img/aorhome_rick.jpg" />
+<meta property="og:description" content="Amazing art that will bend your mind into a pretzel at Art-O-Rama Gallery" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://aor.gallery/index.php" />
 <meta property="og:image" content="http://aor.gallery/img/aorhome_rick.jpg" />
-<!--<meta property="og:video" content="http://aor.gallery/rick/img/lamps1_lg.mp4" />-->
+<!--<meta property="og:video" content="http://aor.gallery/rick/img/worlds1a_lg.mp4" />-->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
 <title>Art-O-Rama</title>
@@ -39,7 +39,7 @@
 
 <body>
 <?php require_once("aorhome_body.php"); ?>
-	<script src="js/rickhome.js"></script>
+	<script src="js/aor.js"></script>
 		
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
