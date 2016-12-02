@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Art-O-Rama Gallery">
-<meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,painting,watercolor,oil,chicago">
+<meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,Artorama,painting,watercolor,oil,chicago">
 <meta name="author" content="Art-O-Rama">
 <meta property="og:title" content="Art-O-Rama Gallery" />
 <meta property="og:description" content="Amazing art that will bend your mind into a pretzel at Art-O-Rama Gallery" />
