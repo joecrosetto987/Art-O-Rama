@@ -1,0 +1,15 @@
+{
+  "name": "Art-O-Rama",
+  "version": "0.1.1",
+  "description": "An Online Eccomerce Art Gallery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joecrosetto987/Art-O-Rama.git"
+  },
+  "author": "Joe Crosetto",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.9.1"
+  }
+}
