@@ -1,14 +1,16 @@
 /* CSS Document */
 /* styles for whole doc */
-$darkgrey: #222;
-$brightblue: #0f6cdf;
-$brightblue-alt: #0051b5;
-$lightgrey: #acadab;
-$greygreen: #a7a99b;
-$almostwhite: #eee;
+$darkgrey: 			#222;
+$brightblue: 		#0f6cdf;
+$brightblue-alt: 	#0051b5;
+$lightgrey: 		#acadab;
+$midgrey: 			#4a4a4a;
+$greygreen: 		#a7a99b;
+$almostwhite: 		#eee;
 
 $highlight: $brightblue;
 $highlight-alt: $brightblue-alt;
+$main-text: $midgrey;
 
 html {
   overflow-x: hidden;
@@ -34,7 +36,7 @@ body {
 	font-family: 'Palanquin', sans-serif;
 	/*font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;*/
 	font-size: 1.1em;
-	color: #4a4a4a;
+	color: $main-text;
   }
 p {
 	line-height: 1.5;
