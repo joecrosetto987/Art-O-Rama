@@ -1,6 +1,16 @@
 /* CSS Document */
 /* styles for whole doc */
-$darkgrey: #222222;
+$darkgrey: 			#222;
+$brightblue: 		#0f6cdf;
+$brightblue-alt: 	#0051b5;
+$lightgrey: 		#acadab;
+$midgrey: 			#4a4a4a;
+$greygreen: 		#a7a99b;
+$almostwhite: 		#eee;
+
+$highlight: $brightblue;
+$highlight-alt: $brightblue-alt;
+$main-text: $midgrey;
 
 html {
   overflow-x: hidden;
@@ -26,13 +36,13 @@ body {
 	font-family: 'Palanquin', sans-serif;
 	/*font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;*/
 	font-size: 1.1em;
-	color: #4a4a4a;
+	color: $main-text;
   }
 p {
 	line-height: 1.5;
 }
 .highlight {
-	color: #0f6cdf;
+	color: $highlight;
 }
 .v-space-sm {
 	margin-top: .5em;
@@ -44,15 +54,15 @@ p {
 	margin-left: 2rem;
 }
 li.active a {
-	color: #0f6cdf;
+	color: $almostwhite;
 }
 
 div.off-canvas-wrapper  div.off-canvas-content {
 	overflow-y: hidden;
-	background-color: #222;
+	background-color: $darkgrey;
 }
 div#offCanvasLeft.off-canvas.position-left {
-	background: #222;
+	background: $darkgrey;
 }
 /* styles for header */
 
@@ -93,7 +103,7 @@ div.detail-head-large {
 	display: inline;
 }
 li a {
-	color: #acadab;
+	color: $lightgrey;
   padding: 0 .5em 0 .5em;
 } 
 
@@ -101,7 +111,7 @@ li a {
 
 .main-row {
 	padding: 4em 0 0 0;
-	background-color: #a7a99b;
+	background-color: $greygreen;
 	background-image:url(../img/grey_background.jpg)
 }
 .main-image-panel.columns {
@@ -113,103 +123,13 @@ li a {
 .small-1.column.text-center.divarrow {
 	padding-top: 25%;
 }
-.blue a i {
-	color: #2D8CD7;
-}
-.arrow:hover {
-	color: #2D8CD7;
-}
-.main-image a {
-	color: #5e5e5e;
-}
 
-div.row.main-image {
-	padding: 0;
-	margin: 0;
-}
-
-cite {
-	color: #4a4a4a;
-}
-.add-to-cart-bt {
-	color: #a7a99b;
-	background-color: #4a4a4a;
-	padding: 5px;
-	margin: 1em 0 1em 0;
-	width: 110px;
-	text-align: center;
-	border-radius: 8px;	
-}
-.detail-text a {
-	color: white;
-}
-.detail-text {
-	margin-bottom: 1em;
-}
-.main-image .column {
-	padding: 0;
-}
-#zoom-minus {
-	display: none;
-}
-#zoom-divider {
-	display: none;
-}
-
-/* styles for alternate images */
-.ai img {
-	margin: 10px;
-}
-.image-wrapper .ai img.not-selected {
-	box-shadow: 0 0 3px 2px #737373;
-}
-.image-wrapper .ai img.selected {
-	box-shadow: 0 0 3px 2px #d1d7c4;
-}
-
-.image-wrapper img, #sizing-image {
-	margin: 10px;
-	box-shadow: 0 0 5px 3px #737373;
-	max-width: 95%;
-}
 
 /* styles for secondary content below the fold */
 
 
-.divide-label-lg {
-	position:relative;
-	height: 115px;
-}
-.divide-label-sm {
-	position:relative;
-	height: 50px;
-}
 
-div.divide-bkg {
-z-index: -1;
-}
-div.gallery-divide-bkg {
-/* There is 1.5rem of padding for the gallery section. because this is a row inside a row, 
- foundation sets the margin to -.9375. but this leave this chunk still pushed a bit to the right
- this negative margin corrects this. 1.5 - .9375 = .5625 */	
-margin-left: -.5625rem;
-z-index: -1;
-}
 
-div.row.divide-row {
-	position: absolute;
-	top: 0px;
-	color: #ababab;
-	width: 100%;
-	margin: 0;
-}
-
-.divide-content-sm {
-	position:absolute;
-	bottom: -15px;
-}
-.divide-content-lg {
-}
 
 .social-icons-white {
 	margin-left: 2em;
@@ -383,14 +303,14 @@ h5.rickhome_gallery_names {
 /*	color: black;*/
 }
 .aorhome-welcome a {
-	color: #eee;
+	color: $highlight-alt;
 /*	padding-left: 1em;
 	padding-right: 1em;
 	border-radius: 5px;*/
 }
 .aorhome-welcome a:hover {
 	/*background-color: #2461ad;*/
-	color: #0f6cdf;
+	color: $almostwhite;
 }
 .about-welcome {
 	background-color: #7e827a;
