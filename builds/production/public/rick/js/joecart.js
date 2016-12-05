@@ -1,0 +1,1 @@
+$(function(){var a=ShopifyBuy.buildClient({apiKey:"3e973c5aad16a739769def1f567d0e20",myShopifyDomain:"art-o-rama-gallery",appId:"6"});a.fetchProduct("8329441158").then(function(a){})});
