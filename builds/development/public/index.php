@@ -16,11 +16,10 @@
 <meta name="viewport" content="width=device-width" />
 <title>Art-O-Rama</title>
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
-<link rel="stylesheet" href="css/foundation.css" /> 
+<link rel="stylesheet" href="css/foundation.min.css" /> 
 <link rel="stylesheet" href="css/aor.css" />
 <link href="https://fonts.googleapis.com/css?family=Merriweather:bold|Palanquin+Dark:semibold|Palanquin:regular" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
 <script src="js/vendor/modernizr.js"></script>
 
 
