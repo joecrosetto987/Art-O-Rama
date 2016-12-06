@@ -1,6 +1,24 @@
 
 @import "animate"; 
 
+$brightblue: 		#0f6cdf;
+$brightblue-alt: 	#0051b5;
+$midblue: 			#818da5;
+$darkblue:			#232b3a;
+$bluegrey:			#667d9b;
+$darkgrey: 			#222;
+$midgrey: 			#4a4a4a;
+$midlightgrey:		#5e5e5e;
+$lightmidgrey:		#737373;
+$lightgrey: 		#acadab;
+$greygreen: 		#a7a99b;
+$darkgreygreen:		#7e827a;
+$lightgreygreen:	#deded8;
+$almostwhite: 		#eee;
+$darkbrown:			#403831;
+$lightbrown:		#a29991;
+$red:				#9e0c0f;
+
 
 html {
   overflow-x: hidden;
@@ -19,35 +37,29 @@ font-family: 'Palanquin Dark', sans-serif;
 	z-index: 25;
 }
 body {
-  background-color: #222;
+  background-color: $darkgrey;
 	font-family: 'Palanquin', sans-serif;
 	color: #4a4a4a;
   }
-.highlight {
-	color: #0f6cdf;
-}
 .v-space-sm {
 	margin-top: .5em;
 }
 .h-space {
 	margin-left: 2rem;
 }
-li.active a {
-	color: #2D8CD7;
-}
 div.off-canvas-wrapper  div.off-canvas-content {
 	overflow-y: hidden;
-	background-color: #222;
+	background-color: $darkgrey;
 }
 div#offCanvasLeft.off-canvas.position-left {
-	background: #222;
+	background: $darkgrey;
 }
 /* styles for header */
 
 div.detail-head-large {
  	width: 100%;
 	position: absolute;
-  top: 0;
+  	top: 0;
 	max-width: 1440px;
  	z-index: -1;
 }
@@ -57,26 +69,12 @@ div.detail-head-large {
 .head-container {
   padding: 0;
 }
-.cart-br-space {
-	line-height: 25px;
-}
-.cart-v-space {
-	margin-top: 12px;
-}
 .detail-head-menu {
 	text-align: right;
-  color: white;
-}
-.head-menu {
-	list-style-type: none;
-	padding: .05em .5em 0 0;
-	margin: 0;
-}
-.head-menu li {
-	display: inline;
+  	color: white;
 }
 li a {
-	color: #ababab;
+	color: $lightgrey;
   padding: 0 .5em 0 .5em;
 } 
 
@@ -85,21 +83,21 @@ li a {
 
 .main-row {
 	padding: 4em 0 0 0;
-	background-color: #a7a99b;
+	background-color: $greygreen;
 	background-image:url(../../img/grey_background.jpg)
 }
 .main-image-panel.columns {
 	padding: 0;
 }
 .gallery-name a {
-	color: #0f6cdf;
+	color: $brightblue;
 	padding-left: .5em;
 	padding-right: .5em;
 	border-radius: 5px;
 }
 .gallery-name a:hover {
-	color: #eee;
-	background-color: #0f6cdf;
+	color: $almostwhite;
+	background-color: $brightblue;
 }
 .arrow {
   padding: 20%;
@@ -108,13 +106,13 @@ li a {
 	padding-top: 25%;
 }
 .blue a i {
-	color: #2D8CD7;
+	color: $brightblue;
 }
 .arrow:hover {
-	color: #2D8CD7;
+	color: $brightblue;
 }
 .main-image a {
-	color: #5e5e5e;
+	color: $midlightgrey;
 }
 
 div.row.main-image {
@@ -123,26 +121,18 @@ div.row.main-image {
 }
 
 cite {
-	color: #4a4a4a;
+	color: $midgrey;
 }
-.add-to-cart-bt {
-	color: #a7a99b;
-	background-color: #4a4a4a;
-	padding: 5px;
-	margin: 1em 0 1em 0;
-	width: 110px;
-	text-align: center;
-	border-radius: 8px;	
-}
+
 /* detail text is the styles for the text loaded from the db that apears to the left or below the art image */
 .detail-text a {
-	color: #ddd;
+	color: $almostwhite;
 }
 .detail-text {
 	margin-bottom: 1em;
 }
 .detail-text a:hover {
-	color: #0f6cdf;
+	color: $brightblue;
 }
 /* a few special styles for the last page of ricks galleries */
 .rick-credit {
@@ -160,13 +150,13 @@ cite {
 }*/
 /* detail-more-text is special styles for the last slide on a page that has links to social media, etc. */
 .detail-more-text a {
-	color: #0f6cdf;
+	color: $brightblue;
 	padding: .5em;
 	border-radius: 5px;
 }
 .detail-more-text a:hover {
-	color: #eee;
-	background-color: #0f6cdf;
+	color: $almostwhite;
+	background-color: $brightblue;
 }
 
 .detail-more-text {
@@ -178,9 +168,6 @@ cite {
 #zoom-minus {
 	display: none;
 }
-#zoom-divider {
-	display: none;
-}
 
 /* styles for alternate images */
 
@@ -188,15 +175,15 @@ cite {
 	margin: 10px;
 }
 .image-wrapper .ai img.not-selected {
-	box-shadow: 0 0 3px 2px #737373;
+	box-shadow: 0 0 3px 2px $lightmidgrey;
 }
 .image-wrapper .ai img.selected {
-	box-shadow: 0 0 3px 2px #d1d7c4;
+	box-shadow: 0 0 3px 2px $lightgreygreen;
 }
 
 .image-wrapper img, #sizing-image {
 	margin: 10px;
-	box-shadow: 0 0 5px 3px #737373;
+	box-shadow: 0 0 5px 3px $lightmidgrey;
 	max-width: 95%;
 }
 
@@ -211,40 +198,29 @@ div.divide-container {
 	position:relative;
 	height: 115px;
 }
-.divide-label-sm {
-	position:relative;
-	height: 50px;
-}
 
-div.divide-bkg {
-z-index: -1;
-}
 div.gallery-divide-bkg {
 /* There is 1.5rem of padding for the gallery section. because this is a row inside a row, 
  foundation sets the margin to -.9375. but this leave this chunk still pushed a bit to the right
  this negative margin corrects this. 1.5 - .9375 = .5625 */	
 /*margin-left: .5625rem;*/
-	background-color: #232b3a;
+	background-color: $darkblue;
 	background-image:url(../../img/texture_blue.png);
 }
 
 div.row.divide-row {
 	position: absolute;
 	top: 0px;
-	color: #ababab;
+	color: $lightgrey;
 	width: 100%;
 	margin: 0;
 }
 
-.divide-content-sm {
-	position:absolute;
-	bottom: -15px;
-}
 .divide-content {
 	position:absolute;
 	bottom: -1rem;
 	padding-left: 0.9375rem;
-	color: #ababab;
+	color: $lightgrey;
 	margin-bottom: 0;
 }
 
@@ -257,22 +233,13 @@ div.row.divide-row {
 .social-icons-space a i {
 	padding: 0 .5em 0 .5em ;	
 }
-.social {
-	margin-top: .4em ;
-	text-align: center;
-}
-.social-icons {
-	float: left;
-}
-.social-icons a i {
-	padding: 0 2em 0 0 ;	
-}
-.social-icons a, .controls a,  footer div p {
-	color: #5e5e5e;
+
+.controls a,  footer div p {
+	color: $lightbrown;
 }
 
 .thumbnail-gallery {
-	background-color: #232b3a;
+	background-color: $darkblue;
 	background-image:url(../../img/texture_blue.png);
 	padding: 1.5rem;
 	padding-bottom: 0px;
@@ -281,21 +248,21 @@ div.column.gallery {
 	padding: .5rem 1.5rem 1.5rem 1.5rem;
 }
 .thumbnail-gallery .not-viewed {
-	  border: solid 4px #4a4a4a;
+	  border: solid 4px $midgrey;
 		opacity: 0.65; 
 }
 .thumbnail-gallery .viewed {
-	  border: solid 4px #ababab; 
+	  border: solid 4px $lightgrey; 
 		opacity: 1;
 }
 
 .thumbnail-gallery .viewed:hover, .thumbnail-gallery .not-viewed:hover {
-	  border: solid 4px #0f6cdf;
+	  border: solid 4px $brightblue;
 }
 
 /* styles for the footer */
 .brown-footer {
-	background-color: #403831;
+	background-color: $darkbrown;
 	background-image:url(../../img/texture_brown.png);
 	padding: 1.5rem;
 	padding-bottom: 0px;
@@ -304,20 +271,20 @@ div.column.gallery {
 	margin-right: -0.9375rem;
 }
 .brown-footer a {
-	color: #acadab;
+	color: $lightgrey;
 }
 .logo-footer {
 	margin-bottom: .5rem;
 }
 .fa-bars {
-	color: #ababab;
+	color: $lightgrey;
 }
 .fa-bars:hover{
-	color: #0f6cdf;
+	color: $brightblue;
 }
 
 a:hover, a .fa-bars:hover{
-	color: #0f6cdf;
+	color: $brightblue;
 }
 
 /* images for animation */
@@ -368,25 +335,7 @@ a:hover, a .fa-bars:hover{
 #sizing-head, #sizing-body {
 		visibility: hidden;
 }
-div.thumb.column {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 20px;
-}
-div.thumb.small-10 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
 /* bit of a kluge, remove the padding so the animation walks in from the edge of the screen. Add it back to the text elements. This is just on the index page*/
-.no-right-pad {
-	padding-right: 0;
-}
-.extra-pad {
-	padding-right: 12%;
-}
-#sizing-anim {
-	display: none;
-}
 .video video,
 .video canvas {
     top: 0;
@@ -408,7 +357,7 @@ video {
 	margin-bottom: -30px;
 }
 #worlds img, #dogs img, #rp img, #random img, #bombs img, #self img{
-	box-shadow: 0 0 5px 3px #737373;
+	box-shadow: 0 0 5px 3px $lightmidgrey;
 }
 #worlds {
 	padding-top: 8%;
@@ -459,9 +408,7 @@ video {
 	padding-top: 4%;
 	position: relative;
 }
-div.rickhome-neg-space.gallery-divide-bkg {
-	margin-left: 0;
-}
+
 div.wedge {
 	margin-left: -2px;
 	margin-bottom: 0px;
@@ -543,11 +490,6 @@ h5.rickhome_gallery_names {
 		margin-left: 0;
 }
 
-.head-svg-container {
-/*    padding-bottom: 6.274%;*/ /*this is your height/width ratio*/
-		position:relative;
-		margin-left: 0;
-  }
 .foot-container svg, .wedge svg, .wedge2 svg {
     position: absolute;
     top: 0;

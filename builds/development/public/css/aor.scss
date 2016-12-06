@@ -1,26 +1,23 @@
 /* CSS Document */
 /* styles for whole doc */
-$darkgrey: 			#222;
 $brightblue: 		#0f6cdf;
 $brightblue-alt: 	#0051b5;
-$lightgrey: 		#acadab;
-$midgrey: 			#4a4a4a;
-$greygreen: 		#a7a99b;
-$darkgreygreen:		#7e827a;
-$almostwhite: 		#eee;
 $midblue: 			#818da5;
 $darkblue:			#232b3a;
+$bluegrey:			#667d9b;
+$darkgrey: 			#222;
+$midgrey: 			#4a4a4a;
+$midlightgrey:		#5e5e5e;
+$lightmidgrey:		#737373;
+$lightgrey: 		#acadab;
+$greygreen: 		#a7a99b;
+$darkgreygreen:		#7e827a;
+$lightgreygreen:	#deded8;
+$almostwhite: 		#eee;
 $darkbrown:			#403831;
 $lightbrown:		#a29991;
-$midlightgrey:		#5e5e5e;
-$bluegrey:			#7e827a;
-$lightgreygreen:	#deded8;
-$red:				#deded8;
+$red:				#9e0c0f;
 
-$highlight: $brightblue;
-$highlight-alt: $brightblue-alt;
-$main-text: $midgrey;
-$blue-footer-text: $midblue;
 
 html {
   overflow-x: hidden;
@@ -46,13 +43,13 @@ body {
 	font-family: 'Palanquin', sans-serif;
 	/*font-family: Arial, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;*/
 	font-size: 1.1em;
-	color: $main-text;
+	color: $midgrey;
   }
 p {
 	line-height: 1.5;
 }
 .highlight {
-	color: $highlight;
+	color: $brightblue;
 }
 
 .h-space {
@@ -110,7 +107,7 @@ li a {
 	background-image:url(../img/texture_blue.png);
 	padding: 1.5rem;
 	padding-bottom: 0px;
-	color: $blue-footer-text;
+	color: $midblue;
 	margin-top: -2px;
 	position: relative;
 }
@@ -182,7 +179,7 @@ div.aorhome-neg-space2 {
 	padding: 0 1.5rem 0 1.5rem;
 }
 .aorhome-welcome a {
-	color: $highlight-alt;
+	color: $brightblue-alt;
 }
 .aorhome-welcome a:hover {
 	color: $almostwhite;
