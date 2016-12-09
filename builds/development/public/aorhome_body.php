@@ -157,15 +157,19 @@
 			<div class="row">
 				<div class="aorhome-welcome small-12 columns">
 					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br></p>
-					<h5 class="aor-font">Welcome!</h5>
-					<p>I hope you are stoked to see the first exhibit at Art-O-Rama online gallery. You will laugh. You will cry. You will shake your head in disbelief at Rick’s stunning work.<br>
-<a class="rick-font" href="rick/index.php">Rick Therrio – Existence is Absurd</a><br>&nbsp;<br>
+					<h5><a class="rick-font" href="rick/index.php">Rick Therrio – Existence is Absurd</a></h5>
 
-Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art. And more!
-<br>&nbsp;<br>
+					<p class="dotted-line">I hope you are stoked to see the first exhibit at Art-O-Rama online gallery. You will laugh. You will cry. You will shake your head in disbelief at Rick’s stunning work.<br>&nbsp;<br></p>
+
+<a href="joemug/index.php"><img src=img/aorhome_mugajoe.jpg></a><br>
+<h5><a class="aor-font" href="joemug/index.php">Mug-a-Joe</a></h5>
+<p class="dotted-line">Looking for the perfect gift for a pesky in-law? Check out these one-of-a kind, handmade mugs!<br>&nbsp;<br></p>
+
+<h5><a class="aor-font" href="about.php">Art-O-Rama</a></h5>
+<p>Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art. And more!
+<br>&nbsp;<br>&nbsp;<br></p>
 		
-		What makes an artist tick? Watch our video interviews and find out! <br><a class="rick-font" href="rick/worlds.php">Rick Therrio Interview</a> <br>&nbsp;<br>&nbsp;<br>
-					</p>
+
 				</div>
 			
 
@@ -200,7 +204,7 @@ Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemot
 					<h5 class="aor-font">Upcoming Exhibit:</h5>
 					<img src="img/aorhome_ctg.jpg">
 					<p><strong>Colson Truck Group</strong><br>
-					Group exhibit featuring 10 infamous Chicago artists still cranking out fantastic art.<br>&nbsp;<br></p>
+					Group exhibit featuring 10 infamous Chicago artists still cranking out fantastic art.<br>&nbsp;<br>&nbsp;<br></p>
 					
 				</div>
 			</div>

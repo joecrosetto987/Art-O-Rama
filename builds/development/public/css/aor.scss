@@ -178,6 +178,9 @@ div.aorhome-neg-space2 {
 	background-image:url(../img/grey_background.jpg);
 	padding: 0 1.5rem 0 1.5rem;
 }
+.dotted-line {
+	border-bottom: dotted 1px $midlightgrey;
+}
 .aorhome-welcome a {
 	color: $brightblue-alt;
 }
@@ -229,8 +232,8 @@ svg {
 .copyright {
 	color: $bluegrey;
 }
-.upcoming img {
-	padding: 5% 25% 0 25%;
+.aorhome-welcome img, .upcoming img {
+	padding: 5% 25% 5% 25%;
 }
 
 .head-svg-container {
