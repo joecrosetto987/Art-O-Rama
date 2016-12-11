@@ -119,8 +119,9 @@
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg h-space"></i></a>
 		</div>
 		<div class="small-6 medium-3 columns text-center">
-			<h5 class="aor-font">Current Exhibit</h5>
-			<a href="rick/index.php">Rick Therrio</a>
+			<h5 class="aor-font">Current Exhibits</h5>
+			<a href="rick/index.php">Rick Therrio</a><br>
+			<a href="joemug/index.php">Mug a Joe</a>
 		</div>
 	</div>	
 
@@ -248,8 +249,9 @@
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg h-space"></i></a>
 		</div>
 		<div class="small-6 medium-3 columns text-center">
-			<h5 class="aor-font">Current Exhibit</h5>
-			<a href="rick/index.php">Rick Therrio</a>
+			<h5 class="aor-font">Current Exhibits</h5>
+			<a href="rick/index.php">Rick Therrio</a><br>
+			<a href="joemug/index.php">Mug a Joe</a>
 		</div>
 	</div>	
 

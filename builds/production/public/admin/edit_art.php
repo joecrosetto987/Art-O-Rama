@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 $required_fields = array("art_title", "art_media_id", "art_size", "art_status_id", "art_framed", "art_order", "art_gallery_id", "art_num_pics");
 validate_presences($required_fields);
 
-$fields_with_max_lengths = array("art_title" => 255, "art_media_additional_info" => 255, "art_size" => 45, "art_desc" => 2048, "art_framed_desc" => 2048, "art_shopify_id" => 2048);
+$fields_with_max_lengths = array("art_title" => 255, "art_media_additional_info" => 255, "art_size" => 45, "art_desc" => 2048, "art_framed_desc" => 2048, "art_shopify_id" => 4096);
 validate_max_lengths($fields_with_max_lengths);
 
 validate_year ("art_created_year");
