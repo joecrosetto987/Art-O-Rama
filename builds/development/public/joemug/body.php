@@ -221,7 +221,9 @@
 						elseif ($art["art_status_id"] == 2) {
 							echo "Not for sale";}
 						elseif ($art["art_status_id"] == 3) {
-							echo "Sold";}
+							echo "Sold &nbsp;&nbsp;";
+							echo "<object class=\"red-dot\" type=\"image/svg+xml\" data=\"../img/red_dot.svg\" width=\"20\" height=\"21\"></object>";
+							}
 						elseif ($art["art_status_id"] == 4) {
 							echo "";}
 							 ?><br>

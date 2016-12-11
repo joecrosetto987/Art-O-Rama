@@ -232,8 +232,18 @@ svg {
 .copyright {
 	color: $bluegrey;
 }
-.aorhome-welcome img, .upcoming img {
+.aorhome-tb-cont {
+	padding: 5% 25% 0 25%;
+} 
+
+.upcoming img {
 	padding: 5% 25% 5% 25%;
+}
+.aorhome-tb {
+	border: solid 4px $lightmidgrey;
+}
+.aorhome-tb:hover {
+	border: solid 4px $brightblue-alt;
 }
 
 .head-svg-container {
@@ -345,4 +355,8 @@ input[type=submit]:hover, input[type=submit]:focus {
 
 .error {
 	color: $red;
+}
+.top-layer {
+	position: relative;
+	z-index: 30;
 }

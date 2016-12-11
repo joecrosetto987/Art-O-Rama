@@ -19,11 +19,11 @@
 <meta name="description" content="Art-O-Rama Gallery - Joe Crosetto">
 <meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,Joe Crosetto,Joseph Crosetto,Crosetto,mugs,pottery,ceramics,cups,clay,chicago">
 <meta name="author" content="Art-O-Rama">
-<meta property="og:title" content="Art-O-Rama Gallery - Joe Crosetto" />
+<meta property="og:title" content="Art-O-Rama Gallery - Mug a Joe" />
 <meta property="og:description" content="Handmade Mugs of Joe Crosetto at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://aor.gallery/joemug/index.php" />
-<meta property="og:image" content="http://aor.gallery/joemug/img/joemug2a_lg.jpg" />
+<meta property="og:image" content="http://aor.gallery/joemug/img/joemug30a_lg.jpg" />
 <meta property="og:video" content="http://aor.gallery/joemug/img/joemug1a_lg.mp4" />
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />

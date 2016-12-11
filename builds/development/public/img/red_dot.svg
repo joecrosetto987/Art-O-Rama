@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.4" height="19.4" viewBox="0 0 19.4 19.4">
+  <defs>
+    <style>
+      .a {
+        fill: #9e2529;
+      }
+    </style>
+  </defs>
+  <title>red_dot</title>
+  <circle class="a" cx="9.7" cy="9.7" r="9.7"/>
+</svg>
