@@ -29,7 +29,7 @@
 <title>Art-O-Rama - Rick Therrio</title>
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
 <link rel="stylesheet" href="../css/foundation.min.css" /> 
-<link rel="stylesheet" href="css/rick.css" />
+<link rel="stylesheet" href="../css/exhibit.css" />
 <link href="https://fonts.googleapis.com/css?family=Merriweather:bold|Palanquin+Dark:semibold" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="../js/vendor/modernizr.js"></script>
@@ -50,7 +50,7 @@
 
 <body>
 <?php require_once("body.php"); ?>
-		<script src="js/rick.js"></script>
+		<script src="../js/exhibit.js"></script>
 		
 		<script>
 		 setFilenamePrefix("<?php echo FILENAME_PREFIX; ?>");

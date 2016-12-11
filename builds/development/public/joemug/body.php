@@ -70,7 +70,12 @@
 
 <div class="row">
 	<div class="small-12 columns ">
-		<h4 class="gallery-name rick-font text-right"><a href="index.php"><?php echo ARTIST ?></a> &#8250; &nbsp;<?php echo GALLERY_NAME ?></h4>
+		<h4 class="gallery-name aor-font text-right">
+			<!--<a href="index.php"> only one gallery in this exhibit so no link to gallery home page-->
+				<?php echo ARTIST ?>
+			<!--</a> -->
+			&#8250; &nbsp;<?php echo GALLERY_NAME ?>
+		</h4>
 	</div>
 </div>
 
@@ -156,7 +161,7 @@
 			<?php $video = mysqli_fetch_assoc($video_set);  ?>
 
   	<div class="image-wrapper">
-			<h5 id="sizing-head" class="rick-font"><?php echo htmlentities($video["video_title"]); ?></h5>
+			<h5 id="sizing-head" class="aor-font"><?php echo htmlentities($video["video_title"]); ?></h5>
 			<div id="sizing-body" class="detail-text">
 				<?php echo nl2br(htmlentities($video["video_desc"])); ?><br>
 			
@@ -169,7 +174,7 @@
 
 
 <div id="text-overlay-content1">
-		<h5 id="overlay-head1" class="rick-font"><?php echo htmlentities($video["video_title"]); ?></h5>
+		<h5 id="overlay-head1" class="aor-font"><?php echo htmlentities($video["video_title"]); ?></h5>
 		<div id="overlay-body1" class="detail-text"><?php 
 			// break up text into separate lines. There mau be an easier way to do this.
 			$array = preg_split ('/\R/', $video["video_desc"]);?>
@@ -188,7 +193,7 @@
 <?php while($art = mysqli_fetch_assoc($art_set)) { ?>
 <?php  $text_count = $art["art_order"]; ?>
 <div id="text-overlay-content<?php echo $text_count; ?>">
-					<h5 id="overlay-head<?php echo $text_count; ?>" class="rick-font"><?php echo htmlentities($art["art_title"]); ?></h5>
+					<h5 id="overlay-head<?php echo $text_count; ?>" class="aor-font"><?php echo htmlentities($art["art_title"]); ?></h5>
 			    <div id="overlay-body<?php echo $text_count; ?>" class="detail-text">
 					
 						<?php echo htmlentities($art["art_created_year"]); ?><br>
@@ -252,7 +257,7 @@
 
 <?php $text_count ++; ?>
 <div id="text-overlay-content<?php echo $text_count; ?>" class="text-center">
-					<h5 id="overlay-head<?php echo $text_count; ?>" class="rick-font">Thanks for visiting!</h5>
+					<h5 id="overlay-head<?php echo $text_count; ?>" class="aor-font">Thanks for visiting!</h5>
 			    <div id="overlay-body<?php echo $text_count; ?>" class="detail-text">
 					<div class="detail-more-text">
 
@@ -288,7 +293,7 @@
 						<image   clip-path="url(#shape-divide5)" width="1440" height="115" xlink:href="../img/texture_blue.png" preserveAspectRatio="xMidYMin slice"></image>
 					</svg>
 						</div>
-						<h5 class="rick-font divide-content"><?php echo GALLERY_NAME ?> Gallery</h5>
+						<h5 class="aor-font divide-content"><?php echo GALLERY_NAME ?> Gallery</h5>
 						<div class="row divide-row">
 								<div  class="small-12 medium-8 columns divide-label-lg">
 								</div>
