@@ -17,7 +17,6 @@ function confirm_query($result_set) {
 	}
 }
 
-
 function form_errors($errors=array()) {
 	$output = "";
 	if (!empty($errors)) {

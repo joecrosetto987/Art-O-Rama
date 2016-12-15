@@ -3,7 +3,6 @@
 
 
 
-
 <!-- wrapper for menu that slides in from the left on mobile size -->
 <div class="off-canvas-wrapper">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>

@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    minifyHTML = require('gulp-minify-html'),
     sourcemaps = require('gulp-sourcemaps');
     //webserver = require('gulp-webserver');
 
