@@ -1,3 +1,4 @@
+
 <?php require_once("../includes/functions.php"); ?>
 <?php require_once("../includes/validation_functions.php"); ?>
 <!doctype html>
@@ -38,6 +39,8 @@
 </head>
 
 <body>
+<?php $selected_table = array ("table" => "contact"); ?>
+<?php require_once("aor_head.php"); ?>
 <?php require_once("contact_body.php"); ?>
 	<script src="js/aor.js"></script>
 		

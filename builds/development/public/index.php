@@ -1,3 +1,4 @@
+<?php require_once("../includes/functions.php"); ?>
 
 <!doctype html>
 <html>
@@ -37,6 +38,8 @@
 </head>
 
 <body>
+<?php $selected_table = array ("table" => "aorhome"); ?>
+<?php require_once("aor_head.php"); ?>
 <?php require_once("aorhome_body.php"); ?>
 	<script src="js/aor.js"></script>
 		
