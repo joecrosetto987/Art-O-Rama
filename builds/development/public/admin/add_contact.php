@@ -18,32 +18,36 @@
 if (isset($_POST['submit'])) {
 
 // Validation
-$required_fields = array("contact_name", "contact_email", "contact_password");
+$required_fields = array("contact_firstname", "contact_lastname", "contact_email");
 validate_presences($required_fields);
 
-$fields_with_max_lengths = array("contact_name" => 255, "contact_password" => 255);
+$fields_with_max_lengths = array("contact_firstname" => 255, "contact_lastname" => 255, "contact_email" => 255, "contact_password" => 255);
 validate_max_lengths($fields_with_max_lengths);
+
+$emails = array("contact_email");
+validate_email($emails);
 
 if (empty($errors)) {
  //perform Update
 
-	$contact_name = mysql_prep($_POST["contact_name"]);
+	$contact_firstname = mysql_prep($_POST["contact_firstname"]);
+	$contact_lastname = mysql_prep($_POST["contact_lastname"]);
 	$contact_email = mysql_prep($_POST["contact_email"]);
-	$contact_password = password_encrypt($_POST["contact_password"]);
-	$contact_web_updates = $_POST["contact_web_updates"];
-	$contact_blog = $_POST["contact_blog"];
+	$contact_password = ""; //password_encrypt($_POST["contact_password"]);
+	$contact_web_updates = (!empty($_POST['contact_web_updates'])) ? 1 : 0;
+	$contact_blog = (!empty($_POST['contact_blog'])) ? 1 : 0;
 	
 	
 	$query = "INSERT INTO contact (";
-	$query .= " contact_name, contact_email, contact_password, contact_web_updates, contact_blog";
+	$query .= " contact_firstname, contact_lastname, contact_email, contact_password, contact_web_updates, contact_blog";
 	$query .= ") VALUES (";
-	$query .= " '{$contact_name}', '{$contact_email}', '{$contact_password}', {$contact_web_updates}, {$contact_blog}";
+	$query .= " '{$contact_firstname}', '{$contact_lastname}', '{$contact_email}', '{$contact_password}', {$contact_web_updates}, {$contact_blog}";
 	$query .= ")";
 	$results = mysqli_query($connection, $query);
 	
 	if ($results) {
 		// Success
-		$_SESSION["message"] = "contact added.";
+		$_SESSION["message"] = "Contact added.";
 		redirect_to("select_contact.php");
 	} else {
 		//failure
@@ -78,27 +82,28 @@ if (empty($errors)) {
 		?>
 		<?php echo form_errors($errors); ?>
 
-		<div class="select-box">				
+		<div class="select-box text-left">				
 			<form action="add_contact.php" method="post"> 
-	  		<p>* Name:
-		    <input type="text" name="contact_name" value="" />
+	  		<p>* First Name:
+		    <input type="text" name="contact_firstname" value="" />
+		    </p>
+		    <p>* Last Name:
+		    <input type="text" name="contact_lastname" value="" />
 		  	</p>
 		  	<p>* Email:
 		    <input type="text" name="contact_email" value="" />
 		  	</p>
-				<p>* Password:
+			<p>Password:
 		    <input type="password" name="contact_password" value="" />
 		  	</p>
-		  	<p>* Recieve Web Updates?<br>
-				<select name="contact_web_updates" class="small_field" >
-					<option value="1" selected>Yes</option>
-					<option value="0">No</option>
-				</select> </p>
-			<p>* Recieve Blog Posts?<br>
-				<select name="contact_blog" class="small_field" >
-					<option value="1" selected>Yes</option>
-					<option value="0">No</option>
-				</select> </p>
+		  	<p><input type="checkbox" name="contact_web_updates" value="1" <?php if (isset($_POST["contact_web_updates"])) {
+					echo "checked"; } 	
+				;?>> Recieve Web Updates<br>
+			</p>
+			<p><input type="checkbox" name="contact_blog" value="1" <?php if (isset($_POST["contact_blog"])) {
+					echo "checked"; } 	
+				;?>> Recieve Blog Posts<br>
+			</p>
 
 		  	<input  name="submit" type="submit" value="Add Contact" />
 			</form>

@@ -285,6 +285,40 @@ function find_gallery_by_id($gallery_id) {
 	}
 	}
 
+	function find_contact_by_email($email) {
+	global $connection;
+	global $current_contact;
+
+	$safe_contact_email = mysqli_real_escape_string($connection, $email);
+
+	$query = "SELECT * ";
+	$query .= "FROM contact ";
+	$query .= "WHERE contact_email = '{$safe_contact_email}' ";
+	$query .= "LIMIT 1";
+	$contact_set = mysqli_query($connection, $query);
+	confirm_query($contact_set);
+	if ($current_contact = mysqli_fetch_assoc($contact_set)) {
+		return true;	
+	} else {
+		return false;
+	}
+	}
+	//if(mysqli_num_rows($contact_set) > 0){
+	//	return true;
+	//} else {
+	//	return false;
+	//}
+
+
+	//	confirm_query($contact_set);
+	//echo "trap3";
+	//if ($contact = mysqli_fetch_assoc($contact_set)) {
+	//	return $contact;	
+	//} else {
+	//	return null;
+	//}
+	//}
+
 		function find_admin_by_user($admin_user) {
 	global $connection;
 	

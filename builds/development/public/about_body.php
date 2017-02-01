@@ -114,11 +114,7 @@ The original Art-O-Rama was like a super nova. It burnt bright but for only abou
 
 			<div class="row">
 				<div class="small-12 columns brown-panel upcoming">
-					<h5 class="aor-font">Upcoming Exhibit:</h5>
-					<img src="img/aorhome_ctg.jpg">
-					<p><strong>Colson Truck Group</strong><br>
-					Group exhibit featuring 10 infamous Chicago artists still cranking out fantastic art.<br>&nbsp;<br></p>
-					
+					<?php require("aor_other_shows.php"); ?>
 				</div>
 			</div>
 			

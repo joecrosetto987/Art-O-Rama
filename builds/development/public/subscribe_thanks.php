@@ -40,10 +40,9 @@
 </head>
 
 <body>
-<?php require_once("subscribe_sql.php"); ?>
 <?php $selected_table = array ("table" => ""); ?>
 <?php require_once("aor_head.php"); ?>
-<?php require_once("subscribe_body.php"); ?>
+<?php require_once("subscribe_thanks_body.php"); ?>
 	<script src="js/aor.js"></script>
 		
     <script src="js/vendor/jquery.min.js"></script>

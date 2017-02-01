@@ -20,7 +20,7 @@
 		<?php while($contact = mysqli_fetch_assoc($contact_set)) { ?>
 			<div class="select-box text-left">
 				<a href="edit_contact.php?contact=<?php echo urlencode($contact["contact_id"]); ?> 
-				"><?php echo htmlentities($contact["contact_name"]); ?>
+				"><?php echo htmlentities($contact["contact_firstname"]) . htmlentities($contact["contact_lastname"]) ?>
 				</a> 
 				<a href="delete_contact.php?contact=<?php echo urlencode($contact["contact_id"]); ?>" class="small button float-right" onclick="return confirm('Are you sure?')">delete</a>
 				<a href="edit_contact.php?contact=<?php echo urlencode($contact["contact_id"]); ?>" class="small button float-right">edit</a>

@@ -12,7 +12,7 @@
 			<div class="row margin-zero main-image-more contact-main">
 				<div class="contact small-offset-1 small-10 end column">
 <h3 class="aor-font">Contact Us</h3>
-<p>Art-O-Rama is online only. We have no store you can visit. Below is our mailing address.<br />&nbsp;<br />
+<p>Art-O-Rama is online only. We have no store you can visit. Our mailing address is in the next panel.<br />&nbsp;<br />
 If you come here you will only find a weird guy pecking away at a computer. 
 Probably better to send a message.
 </p>
@@ -151,6 +151,11 @@ if (empty($errors)) {
 					<p><a href="mailto:info@aor.gallery?Subject=Message%20from%20AOR%20visitor" target="_top"><i class="fa fa-envelope fa-lg"></i><span class="phone">&nbsp;&nbsp;info@aor.gallery</span></a></p>
 					<p class="phone"><img src="img/snail.png" width="30" height="21">&nbsp;&nbsp;Art-O-Rama<br>
 						126 Francisco Terrace<br>Oak Park, IL 60302</p>
+					<p class="v-space-lg"><a href="subscribe.php"><i class="fa fa-rss fa-lg"></i><span class="phone">&nbsp;&nbsp; Subscribe</span></a></p>
+					<p class="v-space-lg"><a href="https://www.facebook.com/aorgallery/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a><a href="https://twitter.com/intent/follow?screen_name=@aorgallery" target="_blank"><i class="fa fa-twitter fa-lg h-space"></i></a><span class="phone">&nbsp;&nbsp;Follow Us</span></p>
+
+					<!--<p><a href="https://www.facebook.com/joecrosettoart" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Post comments and Like me on my Facebook Page</p>
+<p><a href="https://twitter.com/intent/follow?screen_name=@JosephCrosetto" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;Follow me on Twitter</p>-->
 		
 		<br>&nbsp;<br>
 					
@@ -185,11 +190,7 @@ if (empty($errors)) {
 
 			<div class="row">
 				<div class="small-12 columns brown-panel upcoming">
-					<h5 class="aor-font">Upcoming Exhibit:</h5>
-					<img src="img/aorhome_ctg.jpg">
-					<p><strong>Colson Truck Group</strong><br>
-					Group exhibit featuring 10 infamous Chicago artists still cranking out fantastic art.<br>&nbsp;<br></p>
-					
+					<?php require("aor_other_shows.php"); ?>
 				</div>
 			</div>
 			
