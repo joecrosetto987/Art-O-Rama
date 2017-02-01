@@ -105,7 +105,15 @@ function find_all_admin() {
 	confirm_query($admin_set);
 	return $admin_set;
 }
-
+function find_all_contact() {
+	global $connection;
+	$query = "SELECT * ";
+	$query .= "FROM contact ";
+	$query .= "ORDER BY contact_id ASC";
+	$contact_set = mysqli_query($connection, $query);
+	confirm_query($contact_set);
+	return $contact_set;
+}
 
 // aor function	
 function find_artist_by_id($artist_id) {
@@ -259,6 +267,58 @@ function find_gallery_by_id($gallery_id) {
 	}
 	}
 
+	function find_contact_by_id($contact_id) {
+	global $connection;
+	
+	$safe_contact_id = mysqli_real_escape_string($connection, $contact_id);
+	
+	$query = "SELECT * ";
+	$query .= "FROM contact ";
+	$query .= "WHERE contact_id = {$safe_contact_id} ";
+	$query .= "LIMIT 1";
+	$contact_set = mysqli_query($connection, $query);
+	confirm_query($contact_set);
+	if ($contact = mysqli_fetch_assoc($contact_set)) {
+		return $contact;	
+	} else {
+		return null;
+	}
+	}
+
+	function find_contact_by_email($email) {
+	global $connection;
+	global $current_contact;
+
+	$safe_contact_email = mysqli_real_escape_string($connection, $email);
+
+	$query = "SELECT * ";
+	$query .= "FROM contact ";
+	$query .= "WHERE contact_email = '{$safe_contact_email}' ";
+	$query .= "LIMIT 1";
+	$contact_set = mysqli_query($connection, $query);
+	confirm_query($contact_set);
+	if ($current_contact = mysqli_fetch_assoc($contact_set)) {
+		return true;	
+	} else {
+		return false;
+	}
+	}
+	//if(mysqli_num_rows($contact_set) > 0){
+	//	return true;
+	//} else {
+	//	return false;
+	//}
+
+
+	//	confirm_query($contact_set);
+	//echo "trap3";
+	//if ($contact = mysqli_fetch_assoc($contact_set)) {
+	//	return $contact;	
+	//} else {
+	//	return null;
+	//}
+	//}
+
 		function find_admin_by_user($admin_user) {
 	global $connection;
 	
@@ -366,7 +426,15 @@ function find_selected_admin() {
 		$current_admin = null;
 	}
 }
-
+function find_selected_contact() {
+	global $current_contact;
+	
+	if (isset($_GET["contact"])) {
+		$current_contact = find_contact_by_id($_GET["contact"]);
+	} else {
+		$current_contact = null;
+	}
+}
 
 // aor function
 function load_selected($current_li) {

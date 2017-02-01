@@ -56,6 +56,7 @@
 					<li><a href="../index.php">Home</a></li>
 					<li><a href="../about.php">About</a></li>
 					<li><a href="../contact.php">Contact</a></li>
+					<li><a href="../subscribe.php">Subscribe</a></li>
 					<li><a href="index.php">Rick Therrio Galleries</a></li>
 			<!--		<li><a href="intro.html">Intro</a></li> -->
       </ul>
@@ -237,7 +238,9 @@
 			<a href="../index.php"><img src="../img/aor_logo_brown_sm.png" class="logo-footer"></a><br>
 			<a href="../index.php">Home</a><br>
 			<a href="../contact.php">Contact</a><br>
-			<a href="../about.php">About</a>
+			<a href="../about.php">About</a><br>
+			<a href="../subscribe.php">Subscribe </a>/
+			<a href="../unsubscribe.php">UnSubscribe</a>
 		</div>
 	</div>	
 	<footer class="row">

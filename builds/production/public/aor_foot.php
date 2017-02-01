@@ -4,6 +4,8 @@
 				<div class="small-12 columns"><a href="index.php"><img src="img/aor_logo_blue_sm.png" class="logo-footer"></a></div>
 				<div class="small-4 columns">
 					<p><a href="index.php">Home</a></p>
+					<p><a href="subscribe.php">Subscribe</a></p>
+					<p><a href="unsubscribe.php">UnSubscribe</a></p>
 				</div>
 				<div class="small-4 columns">
 					<p><a href="about.php">About</a></p>
