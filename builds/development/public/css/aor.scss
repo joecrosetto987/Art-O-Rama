@@ -302,18 +302,34 @@ div.padding-zero {
 .contact-main a:hover {
 	color: $brightblue;
 }
-.contact-options {
+
+.subscribe a, .thanks a {
+	color: $brightblue-alt;
+}
+.subscribe a:hover, .thanks a:hover {
+	color: $almostwhite;
+}
+.contact-options, .subscribe-options {
 	background-color: $darkgreygreen;
 	background-image:url(../img/texture_grey.png);
 	padding: 0 1.5rem 0 1.5rem;
 	color: black;
 }
 
+
+.subscribe-options a {
+	color: $brightblue-alt;
+	font-weight: bold;
+}
+.subscribe-options a:hover {
+	color: $almostwhite;
+}
+
 .contact-options a {
 	color: black;
 }
 .contact-options a:hover {
-	color: black;
+	color: $brightblue-alt;
 }
 .contact-main img {
 	margin: 0 0 20px 20px;

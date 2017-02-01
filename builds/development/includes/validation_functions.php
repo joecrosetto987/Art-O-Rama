@@ -44,6 +44,17 @@ function validate_max_lengths($fields_with_max_lengths) {
 	}
 }
 
+// * valid email address
+function validate_email($emails) {
+	global $errors;
+	// Expects an assoc. array
+	foreach($emails as $email) {
+	  $value = trim($_POST[$email]);
+	  if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
+   		$errors[$email] = fieldname_as_text($email) . " is not a valid format";
+	  }
+	}
+}
 
 // * inclusion in a set
 function has_inclusion_in($value, $set) {

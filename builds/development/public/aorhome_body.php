@@ -72,6 +72,9 @@
 <h5><a class="aor-font" href="joemug/index.php">Mug a Joe</a></h5>
 <p class="dotted-line">Looking for the perfect gift for a pesky in-law? Check out these one-of-a kind, handmade mugs!<br>&nbsp;<br></p>
 
+<h5><a class="aor-font" href="subscribe.php">Subscribe!</a></h5>
+<p class="dotted-line">Join the Art-O-Rama family. We will send you an email when we have something new on the website.<br>&nbsp;<br></p>
+
 <h5><a class="aor-font" href="about.php">Art-O-Rama</a></h5>
 <p>Art-O-Rama was an edgy gallery in the 90s and is now reborn as an online behemoth promoting the world’s greatest artists. This is the place to buy stupendous, one-of-a-kind art. And more!
 <br>&nbsp;<br>&nbsp;<br></p>
@@ -108,11 +111,7 @@
 
 			<div class="row">
 				<div class="small-12 columns brown-panel upcoming">
-					<h5 class="aor-font">Upcoming Exhibit:</h5>
-					<img src="img/aorhome_ctg.jpg">
-					<p><strong>Colson Truck Group</strong><br>
-					Group exhibit featuring 10 infamous Chicago artists still cranking out fantastic art.<br>&nbsp;<br>&nbsp;<br></p>
-					
+					<?php require("aor_other_shows.php"); ?>
 				</div>
 			</div>
 			
