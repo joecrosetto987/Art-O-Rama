@@ -41,7 +41,7 @@
 
 <body>
 <?php require_once("subscribe_sql.php"); ?>
-<?php $selected_table = array ("table" => ""); ?>
+<?php $selected_table = array ("table" => "subscribe"); ?>
 <?php require_once("aor_head.php"); ?>
 <?php require_once("subscribe_body.php"); ?>
 	<script src="js/aor.js"></script>

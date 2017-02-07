@@ -32,13 +32,18 @@ if (empty($errors)) {
 	// REPLACE THE LINE BELOW WITH YOUR E-MAIL ADDRESS.
 	$to = 'joecrosetto987@gmail.com' ;
 	$subject = 'From AOR contact page' ;
+	$from = 'info@aor.gallery';
 	
 	// NOT SUGGESTED TO CHANGE THESE VALUES
 	$message = 'Name: ' . $_POST ["Name"] . "\n";
 	$message .= 'Email: ' . $_POST ["Email"] . "\n";
 	$message .= 'Phone: ' . $_POST ["Phone"] . "\n";
 	$message .= 'Message: ' . $_POST ["form-message"] . "\n";
-	$headers = 'From: ' . $_POST["Email"] . PHP_EOL ;
+	// gmail was marking emails as threats because maybe the person filling
+	// out the form enters a gmail address but then I am sending from my 1and1 mail // server indicating it is from a gmail address. So instead of putting the
+	// visitors email in the from field, I am putting info@aor.gallery
+	// $headers = 'From: ' . $_POST["Email"] . PHP_EOL ;
+	$headers = 'From: ' . $from . PHP_EOL ;
 	mail ( $to, $subject, $message, $headers ) ;
 	
 	// THE TEXT IN QUOTES BELOW IS WHAT WILL BE 
