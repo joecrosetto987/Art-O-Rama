@@ -754,7 +754,7 @@ function twitterShare() {
     //Allow for title and status bars.
     topPosition = (window.screen.height / 2) - 220;
     //Open the window.
-		window.open("https://twitter.com/intent/tweet?text=Please%20look%20at%20Rick%20Therrio's%20fantastic%20art:&url=" + location.protocol+"//"+location.host+location.pathname + "&via=JosephCrosetto", "", "width=550,height=420,resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+		window.open("https://twitter.com/intent/tweet?text=Please%20look%20at%20this%20fantastic%20art:&url=" + location.protocol+"//"+location.host+location.pathname + "&via=JosephCrosetto", "", "width=550,height=420,resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
 }
 //function pinterestShare() {
 //	var nextImageID = "image" + curImageNum;
