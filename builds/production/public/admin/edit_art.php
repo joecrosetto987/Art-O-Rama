@@ -49,6 +49,7 @@ if (empty($errors)) {
 	$art_order = $_POST["art_order"];
 	$art_gallery_id = $_POST["art_gallery_id"];
 	$art_num_pics = $_POST["art_num_pics"];
+	$art_pic_num = $_POST["art_pic_num"];
 	
 	
 	
@@ -67,7 +68,8 @@ if (empty($errors)) {
 	$query .= "art_artist_desc = '{$art_artist_desc}', ";
 	$query .= "art_order = {$art_order}, ";
 	$query .= "art_gallery_id = {$art_gallery_id}, ";
-	$query .= "art_num_pics = {$art_num_pics} ";
+	$query .= "art_num_pics = {$art_num_pics}, ";
+	$query .= "art_pic_num = {$art_pic_num} ";
 	$query .= "WHERE art_id = {$art_id} ";
 	$query .= "LIMIT 1";
 	
@@ -157,7 +159,8 @@ if (empty($errors)) {
 					<option value="1" <?php if ($current_art["art_status_id"] == "1") {echo "selected";}  ?>>For sale</option>
 					<option value="2" <?php if ($current_art["art_status_id"] == "2") {echo "selected";}  ?>>Not for sale</option>
 					<option value="3" <?php if ($current_art["art_status_id"] == "3") {echo "selected";}  ?>>Sold</option>
-					<option value="4" <?php if ($current_art["art_status_id"] == "4") {echo "selected";}  ?>>Other</option>
+					<option value="4" <?php if ($current_art["art_status_id"] == "4") {echo "selected";}  ?>>Sold/Archived</option>
+					<option value="5" <?php if ($current_art["art_status_id"] == "5") {echo "selected";}  ?>>Other</option>
 				</select> </p>
 				
 				<p>Art Description:
@@ -191,6 +194,9 @@ if (empty($errors)) {
 		  	</p>
 				<p>* Number of pictures (typically 1 but increase number is there are alt images:<br>
 		    <input type="number" name="art_num_pics" value="<?php echo htmlentities($current_art["art_num_pics"]); ?>" class="small_field"/>
+		  	</p>
+		  	<p>* Picture Number (number part of the picture filename, i.e. for joemug17a_lg.jpg Picture number would be 17):<br>
+		    <input type="number" name="art_pic_num" value="<?php echo htmlentities($current_art["art_pic_num"]); ?>" class="small_field"/>
 		  	</p>
 
 				

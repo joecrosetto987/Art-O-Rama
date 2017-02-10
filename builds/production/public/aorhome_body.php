@@ -68,9 +68,9 @@
 
 					<p class="dotted-line">I hope you are stoked to see the first exhibit at Art-O-Rama online gallery. You will laugh. You will cry. You will shake your head in disbelief at Rick’s stunning work.<br>&nbsp;<br></p>
 
-<div class="aorhome-tb-cont"><a href="joemug/index.php"><img class="aorhome-tb" src=img/aorhome_mugajoe.jpg></a></div><br>
+<div class="aorhome-tb-cont"><a href="joemug/index.php"><img class="aorhome-tb" src=img/aorhome_mugajoe3.jpg></a></div><br>
 <h5><a class="aor-font" href="joemug/index.php">Mug a Joe</a></h5>
-<p class="dotted-line">Looking for the perfect gift for a pesky in-law? Check out these one-of-a kind, handmade mugs!<br>&nbsp;<br></p>
+<p class="dotted-line">Check out these one-of-a kind, handmade mugs by Joe Crosetto!<br>&nbsp;<br></p>
 
 <h5><a class="aor-font" href="subscribe.php">Subscribe!</a></h5>
 <p class="dotted-line">Join the Art-O-Rama family. We will send you an email when we have something new on the website.<br>&nbsp;<br></p>

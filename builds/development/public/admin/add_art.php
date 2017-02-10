@@ -56,13 +56,14 @@ if (empty($errors)) {
 	$art_order = $_POST["art_order"];
 	$art_gallery_id = $_POST["art_gallery_id"];
 	$art_num_pics = $_POST["art_num_pics"];
+	$art_pic_num = $_POST["art_pic_num"];
 	
 	
 	
 	$query = "INSERT INTO art (";
-	$query .= " art_title, art_media_id, art_media_additional_info, art_size, art_created_year, art_shopify_id, art_price, art_status_id, art_desc, art_framed, art_framed_desc, art_order, art_gallery_id, art_num_pics";
+	$query .= " art_title, art_media_id, art_media_additional_info, art_size, art_created_year, art_shopify_id, art_price, art_status_id, art_desc, art_framed, art_framed_desc, art_order, art_gallery_id, art_num_pics, art_pic_num";
 	$query .= ") VALUES (";
-	$query .= " '{$art_title}', {$art_media_id}, '{$art_media_additional_info}', '{$art_size}', {$art_created_year}, '{$art_shopify_id}', {$art_price}, {$art_status_id}, '{$art_desc}', {$art_framed}, '{$art_framed_desc}', {$art_order}, {$art_gallery_id}, {$art_num_pics} ";
+	$query .= " '{$art_title}', {$art_media_id}, '{$art_media_additional_info}', '{$art_size}', {$art_created_year}, '{$art_shopify_id}', {$art_price}, {$art_status_id}, '{$art_desc}', {$art_framed}, '{$art_framed_desc}', {$art_order}, {$art_gallery_id}, {$art_num_pics}, {$art_pic_num} ";
 	$query .= ")";
 	
 	
@@ -152,7 +153,8 @@ if (empty($errors)) {
 					<option value="1">For sale</option>
 					<option value="2">Not for sale</option>
 					<option value="3">Sold</option>
-					<option value="4">Other</option>
+					<option value="4">Sold/Archived</option>
+					<option value="5">Other</option>
 				</select> </p>
 				
 				<p>Art Description:
@@ -184,10 +186,12 @@ if (empty($errors)) {
 				<?php } ?>
 				</select>
 		  	</p>
-				<p>* Number of pictures (typically 1 but increase number is there are alt images:<br>
+				<p>* Number of pictures (typically 1 but increase number is there are alt images):<br>
 		    <input type="number" name="art_num_pics" value="1" class="small_field"/>
 		  	</p>
-
+			<p>* Picture Number (number part of the picture filename, i.e. for joemug17a_lg.jpg Picture number would be 17):<br>
+		    <input type="number" name="art_pic_num" value="0" class="small_field"/>
+		  	</p>
 				
 		  	<div class="center_me"><input  name="submit" type="submit" value="Add Art" /></div>
 			

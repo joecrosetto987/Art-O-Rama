@@ -57,6 +57,7 @@
 					<li><a href="../index.php">Home</a></li>
 					<li><a href="../about.php">About</a></li>
 					<li><a href="../contact.php">Contact</a></li>
+					<li><a href="../subscribe.php">Subscribe</a></li>
 			<!--		<li><a href="index.php">Rick Therrio Galleries</a></li> -->
 			<!--		<li><a href="intro.html">Intro</a></li> -->
       </ul>
@@ -83,9 +84,9 @@
 					<?php 
 						$art_set = find_all_art_by_gallery_id($art_gallery_id);
 					?>
-					<?php 
-						$video_set = find_all_video_by_gallery_id($video_gallery_id);
-					?>
+					<!--<?php 
+						//$video_set = find_all_video_by_gallery_id($video_gallery_id);
+					?>-->
 
 
 <div class="row" id="reload-eq-outer">
@@ -106,18 +107,21 @@
 					<div class="image-wrapper">
 					<!-- this first image is actually hidden but it is used to size the screen. It seems like I am duplicating the first image but it is just sizing the page for the first image. I'm using data-interchange to dynamically load the right size image -->
 					<div id="si-container">
-					<img id="sizing-image" data-interchange="[img/vs_<?php echo FILENAME_PREFIX; ?>1a_sm.jpg, small], [img/vs_<?php echo FILENAME_PREFIX; ?>1a_lg.jpg, medium]" alt="<?php echo ARTIST; ?>, Artwork">
+					<img id="sizing-image" data-interchange="[img/<?php echo FILENAME_PREFIX; ?>1a_sm.jpg, small], [img/<?php echo FILENAME_PREFIX; ?>1a_lg.jpg, medium]" alt="<?php echo ARTIST; ?>, Artwork">
+					<!-- special code for video being the first image
+					<img id="sizing-image" data-interchange="[img/vs_<?php// echo FILENAME_PREFIX; ?>1a_sm.jpg, small], [img/vs_<?php //echo FILENAME_PREFIX; ?>1a_lg.jpg, medium]" alt="<?php //echo ARTIST; ?>, Artwork">-->
 					</div>
 										
 										
 						<!-- Here are where to put all the images. They need to be in the "img" folder. There can be any number of images, the js will count them. they should all have the same main name, i.e. "flower" followed by a number. There should be two versions of each image a large (ends with _lg, 1200px in long direction) and a small (ends with _sm, 600px in long direction). I am using foundations data-interchange to load the small image if on a small screen to speed up the initial download. -->
+
+					<!-- special code for video being the first image	
 						<div id="image-overlay-content1" class="video">
 							<canvas width="1200" height="675"></canvas>
-							<video controls autoplay id="image1" src="img/<?php echo FILENAME_PREFIX; ?>1a_lg.mp4">
+							<video controls autoplay id="image1" src="img/<?php //echo FILENAME_PREFIX; ?>1a_lg.mp4">
        				</video> 
-							<!--<video controls autoplay  id="image1" src="img/worlds1_lg.mp4">
-       				</video>-->
-						</div>
+
+						</div>-->
 						
 						<!-- PHP loop of images -->
 							<?php 
@@ -157,35 +161,102 @@
 <!-- Here is where the text goes. The first block of text is duplicated. The sizing text is actually hidden. It is just used to size the column height dynamically. Just plug your text in. The number after content, head and body should be incremented with each entry -->	
 
 <!-- there should be only one video and I am just getting the title and description -->
-			<?php $video = mysqli_fetch_assoc($video_set);  ?>
+			<!--<?php //$video = mysqli_fetch_assoc($video_set);  ?>-->
 
+			<?php //getting the art_set again to beging for sizing the text
+						mysqli_data_seek($art_set, 0);	
+						$art = mysqli_fetch_assoc($art_set);
+					?>
+			<?php  $text_count = $art["art_order"]; ?>
   	<div class="image-wrapper">
-			<h5 id="sizing-head" class="aor-font"><?php echo htmlentities($video["video_title"]); ?></h5>
+
+			<h5 id="sizing-head" class="aor-font"><?php echo htmlentities($art["art_title"]); ?></h5>
 			<div id="sizing-body" class="detail-text">
-				<?php echo nl2br(htmlentities($video["video_desc"])); ?><br>
-			
-				<cite><?php echo htmlentities($video["video_credit"]); ?></cite>
+				<?php echo htmlentities($art["art_created_year"]); ?><br>
+					<?php 
+						if (empty($art["art_media_additional_info"])) {
+							$media = find_media_by_id($art["art_media_id"]);
+							echo htmlentities($media["media_name"]);
+						} else {
+							echo htmlentities($art["art_media_additional_info"]); 
+						} ?><br>
+					<?php echo htmlentities($art["art_size"]); ?><br>
+					<?php 
+						if ($art["art_framed"]) { 
+							if (empty($art["art_framed_desc"])) {
+								echo "Framed" . "<br>"; 
+							} else {
+								echo htmlentities($art["art_framed_desc"]) . "<br>";
+							}
+						}
+					?>
+					<?php // art_status 1=for sale, 2=not for sale, 3=sold, 4=other (leave blank)
+						if ($art["art_status_id"] == 1) {
+							echo "$" . htmlentities($art["art_price"]) . "<br>";
+							//echo $art["art_shopify_id"]; 
+							echo "<br><br><br>";
+						}
+						elseif ($art["art_status_id"] == 2) {
+							echo "Not for sale";}
+						elseif ($art["art_status_id"] == 3) {
+							echo "Sold &nbsp;&nbsp;";
+							echo "<object class=\"red-dot\" type=\"image/svg+xml\" data=\"../img/red_dot.svg\" width=\"20\" height=\"21\"></object>";
+							}
+						elseif ($art["art_status_id"] == 4) {
+							echo "";}
+							 ?><br>
+						
+						
+						<?php echo nl2br(htmlentities($art["art_desc"])); ?>
+						<?php 
+	// if art num pics is > 1, list the images
+							if ($art["art_num_pics"] > 1) {
+								echo "<div class=\"alt-images\">";
+								for ($c = 1; $c <= $art["art_num_pics"]; ++$c) {
+   							//	echo "   <a class=\"ai\" id=\"jj" . $text_count . number_to_letter($c). "\">";
+									echo "   <a class=\"ai\" \>";
+									echo "<img src=\"img/" . FILENAME_PREFIX . $text_count . number_to_letter($c) . "_tb.jpg\" width=\"50\" height=\"50\"";
+									if ($c == 1) { 
+										echo " class=\"selected\" "; 
+									} else {
+										echo " class=\"not-selected\" ";
+									}
+									echo " onmouseover=\"highlightAi(this)\" ";
+									echo ">";
+									echo "</a>";
+									}
+								echo "</div>";
+							}
+							?>
 			</div>
+
+
+			<!--<h5 id="sizing-head" class="aor-font"><?php// echo htmlentities($video["video_title"]); ?></h5>
+			<div id="sizing-body" class="detail-text">
+				<?php //echo nl2br(htmlentities($video["video_desc"])); ?><br>
+			
+				<cite><?php //echo htmlentities($video["video_credit"]); ?></cite>
+			</div>-->
 		
 
 <!-- put space in for animation on the last slide. It will be display = none unitl then and then switched to display = inline block. this is done in the load arrows in the js. 
 <img src="img/anim_empty.png" alt="0" id="sizing-anim">		-->
 
 
-<div id="text-overlay-content1">
-		<h5 id="overlay-head1" class="aor-font"><?php echo htmlentities($video["video_title"]); ?></h5>
+<!--<div id="text-overlay-content1">
+		<h5 id="overlay-head1" class="aor-font"><?php // echo htmlentities($video["video_title"]); ?></h5>
 		<div id="overlay-body1" class="detail-text"><?php 
 			// break up text into separate lines. There mau be an easier way to do this.
-			$array = preg_split ('/\R/', $video["video_desc"]);?>
-			<?php foreach ($array as $key => $value) {
-   			echo htmlentities($array[$key]); ?><br>
-			<?php } ?>
-			<cite><?php echo htmlentities($video["video_credit"]); ?></cite>
+			//$array = preg_split ('/\R/', $video["video_desc"]);?>
+			<?php //foreach ($array as $key => $value) {
+   			//echo htmlentities($array[$key]); ?><br>
+			<?php //} ?>
+			<cite><?php //echo htmlentities($video["video_credit"]); ?></cite>
 		</div>
-</div>
+</div> -->
 
 
-					<?php //getting the art_set again to
+					<?php //getting the art_set again to beginning again
 						mysqli_data_seek($art_set, 0);	
 					?>
 
@@ -315,9 +386,11 @@
 
 
 <div class="row small-up-2 medium-up-3 large-up-5  thumbnail-gallery">
+<!-- used to be for the video thumbnail
 <div class="column gallery">
-<a href="#" class="tb" id="tb1"><img class="viewed" src="img/<?php echo FILENAME_PREFIX; ?>1a_tb.jpg"></a>
+<a href="#" class="tb" id="tb1"><img class="viewed" src="img/<?php //echo FILENAME_PREFIX; ?>1a_tb.jpg"></a>
 </div>
+-->
 
 <?php while($art = mysqli_fetch_assoc($art_set)) { ?>
 								<?php $img_count = $art["art_order"]; ?>
@@ -387,7 +460,9 @@
 			<a href="../index.php"><img src="../img/aor_logo_brown_sm.png" class="logo-footer"></a><br>
 			<a href="../index.php">Home</a>&nbsp;&nbsp;&nbsp;
 			<a href="../contact.php">Contact</a>&nbsp;&nbsp;&nbsp;
-			<a href="../about.php">About</a>
+			<a href="../about.php">About</a><br>
+			<a href="../subscribe.php">Subscribe </a>/
+			<a href="../unsubscribe.php">UnSubscribe</a>
 		</div>
 	</div>	
 	<footer class="row">

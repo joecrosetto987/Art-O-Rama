@@ -214,6 +214,8 @@ function find_gallery_by_id($gallery_id) {
 	$query = "SELECT * ";
 	$query .= "FROM art ";
 	$query .= "WHERE art_gallery_id = {$safe_art_gallery_id} ";
+	// status_id 4 is sold/archived so we don't want to include these
+	$query .= "AND art_status_id != '4'";
 	$query .= "ORDER BY art_order ASC";
 	//$query .= "LIMIT 1";
 	$art_set = mysqli_query($connection, $query);
