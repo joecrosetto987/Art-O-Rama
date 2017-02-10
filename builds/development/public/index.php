@@ -16,7 +16,7 @@
 <!--<meta property="og:video" content="http://aor.gallery/rick/img/worlds1a_lg.mp4" />-->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
-<meta name="google-site-verification" content="EurgVSoUuoyqTJkuR0dlhszvJcD_t2xrawMSoi5WAww" />
+<!--<meta name="google-site-verification" content="EurgVSoUuoyqTJkuR0dlhszvJcD_t2xrawMSoi5WAww" />-->
 <title>Art-O-Rama</title>
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
 <link rel="stylesheet" href="css/foundation.min.css" /> 
