@@ -1,27 +1,25 @@
-<?php require_once("../includes/session.php"); ?>
-<?php require_once("../includes/functions.php"); ?>
 
+<?php require_once("../../includes/functions.php"); ?>
+<?php require_once("../../includes/validation_functions.php"); ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Art-O-Rama Gallery">
-<meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,Artorama,painting,watercolor,oil,chicago">
+<meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,painting,watercolor,oil,chicago">
 <meta name="author" content="Art-O-Rama">
 <meta property="og:title" content="Art-O-Rama Gallery" />
 <meta property="og:description" content="Amazing art that will bend your mind into a pretzel at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://aor.gallery/index.php" />
+<meta property="og:url" content="http://aor.gallery/contact.php" />
 <meta property="og:image" content="http://aor.gallery/img/aorhome_rick.jpg" />
-<!--<meta property="og:video" content="http://aor.gallery/rick/img/worlds1a_lg.mp4" />-->
+<!--<meta property="og:video" content="http://aor.gallery/rick/img/lamps1_lg.mp4" />-->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
-<!--<meta name="google-site-verification" content="EurgVSoUuoyqTJkuR0dlhszvJcD_t2xrawMSoi5WAww" />-->
 <title>Art-O-Rama</title>
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
 <link rel="stylesheet" href="css/foundation.min.css" /> 
 <link rel="stylesheet" href="css/aor.css" />
-<link rel="stylesheet" href="css/hover_effect2.css" />
 <link href="https://fonts.googleapis.com/css?family=Merriweather:bold|Palanquin+Dark:semibold|Palanquin:regular" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="js/vendor/modernizr.js"></script>
@@ -41,9 +39,9 @@
 </head>
 
 <body>
-<?php $selected_table = array ("table" => "aorhome"); ?>
-<?php require_once("aor_head.php"); ?>
-<?php require_once("aorhome_body2.php"); ?>
+<?php $selected_table = array ("table" => "contact"); ?>
+<?php// require_once("aor_head.php"); ?>
+<?php require_once("email_body.php"); ?>
 	<script src="js/aor.js"></script>
 		
     <script src="js/vendor/jquery.min.js"></script>

@@ -73,31 +73,9 @@ window.onload = function() {
 		aiButtons[i].onmouseover = handleAi;
 	}
 	
-	forwardSlide();
+	
 };
 
-function forwardSlide() {
-	var newImageNum = location.search.split('mySlide=')[1] ? location.search.split('mySlide=')[1] : 1;
-	var t = 0;
-	var q = 0;
-	if (newImageNum > curImageNum) {
-			for (t = curImageNum; t < newImageNum; t++) {
-				q = t + 1;
-				imageForward(t, q);
-				textForward(t, q);
-			}
-	} else if (newImageNum < curImageNum) {
-			for (t = curImageNum; t > newImageNum; t--) {
-				q = t - 1;
-				imageBack(t, q);
-				textBack(t, q);
-			}
-	}
- 
-	curImageNum = newImageNum;
-	unhighlight (newImageNum);
-	loadArrows();
-}
 
 // hides the left arrow on the first image, since you can't go back
 // hides the right arrow on the last image since you can't go forward
