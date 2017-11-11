@@ -21,6 +21,7 @@
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
 <link rel="stylesheet" href="css/foundation.min.css" /> 
 <link rel="stylesheet" href="css/aor.css" />
+<link rel="stylesheet" href="css/hover_effect2.css" />
 <link href="https://fonts.googleapis.com/css?family=Merriweather:bold|Palanquin+Dark:semibold|Palanquin:regular" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="js/vendor/modernizr.js"></script>
@@ -42,7 +43,7 @@
 <body>
 <?php $selected_table = array ("table" => "aorhome"); ?>
 <?php require_once("aor_head.php"); ?>
-<?php require_once("aorhome_body.php"); ?>
+<?php require_once("aorhome_body2.php"); ?>
 	<script src="js/aor.js"></script>
 		
     <script src="js/vendor/jquery.min.js"></script>

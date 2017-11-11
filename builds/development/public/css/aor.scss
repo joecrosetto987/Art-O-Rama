@@ -396,3 +396,20 @@ input[type=submit]:hover, input[type=submit]:focus {
 	position: relative;
 	z-index: 30;
 }
+div.thumb.column {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+div.thumb.small-10 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.small-1.column.text-center.divarrow {
+  padding-top: 25%;
+}
+div.row.aorhome-mainrow {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  background-color: $lightgrey;
+}
