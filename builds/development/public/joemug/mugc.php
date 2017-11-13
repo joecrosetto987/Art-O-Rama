@@ -3,7 +3,7 @@
 <?php require_once("../../includes/functions.php"); ?>
 
 <?php
-	define("GALLERY_NAME", "Mug a Joe");
+	define("GALLERY_NAME", "Mugs Gallery C");
 	define("ARTIST", "Joe Crosetto");
 	$gallery = find_gallery_by_name(GALLERY_NAME);
 	define("FILENAME_PREFIX", $gallery["gallery_filename_prefix"]);

@@ -210,7 +210,25 @@ if(nextImage.nodeName.toLowerCase() === "video") {
   // this is the foundation function that actually does the resize
 	new Foundation.Equalizer($("#reload-eq-outer")).applyHeight();
 	
-	//unhighlight (curImageNum);
+
+// new code 11-13-2017 starts here. Fixed a bug that caused vertical images to stay big and 
+// then get cropped when they were the first image in a gallery. I guess the first image was
+// always horizontal before so this code was never tested
+
+ // now put the margin on the actual image that will be displayed (above was just the place holder)
+  
+ 	overlayName = "image-overlay-content" + curImageNum;
+	var overlayImage = document.getElementById(overlayName);
+
+ 
+  if (nextImage.height > nextImage.width) {
+    overlayImage.style.padding = "0 15%";
+  } else {
+    overlayImage.style.padding = "0";
+  }
+
+// new code ends
+
 }
 
 function imageForward(oldImageNum, newImageNum) {
