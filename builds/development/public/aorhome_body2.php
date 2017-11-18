@@ -30,7 +30,7 @@
 			</div>
 	
 			<div class="thumb column">
-				<a href="joemug/mugc.php">
+				<a href="joemug/muga.php">
 					<div class="media"> 
 					<img src="img/muga4a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
@@ -41,7 +41,7 @@
 				</a>
 			</div>
 			<div class="thumb column">
-				<a href="joemug/mugc.php">
+				<a href="joemug/mugb.php">
 					<div class="media"> 
 					<img src="img/mugb7b_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
@@ -63,7 +63,7 @@
 				</a>
 			</div>
 			<div class="thumb column">
-				<a href="joemug/mugc.php">
+				<a href="joemug/bowls.php">
 					<div class="media"> 
 					<img src="img/bowls1a_tb.jpg" class="th" alt="Thumbnail for a bowl by Joseph Crosetto">
 					  <div class="media__body">
@@ -74,7 +74,7 @@
 				</a>
 			</div>
 			<div class="thumb column">
-				<a href="joemug/mugc.php">
+				<a href="joemug/pots.php">
 					<div class="media"> 
 					<img src="img/pots1a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
@@ -154,7 +154,9 @@
 
 			<div class="row">
 				<div class="aorhome-welcome small-12 columns">
-					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br></p>
+					<p class="show-for-medium"><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></p> 
+					
+
 	<!--				
 					<h5 class="top-layer"><a class="aor-font" href="rick/index.php">Rick Therrio – Existence is Absurd</a></h5>
 

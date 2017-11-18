@@ -3,7 +3,7 @@
 <?php require_once("../../includes/functions.php"); ?>
 
 <?php
-	define("GALLERY_NAME", "Mugs Gallery A");
+	define("GALLERY_NAME", "Mug a Joe");
 	define("ARTIST", "Joe Crosetto");
 	$gallery = find_gallery_by_name(GALLERY_NAME);
 	define("FILENAME_PREFIX", $gallery["gallery_filename_prefix"]);
@@ -19,15 +19,15 @@
 <meta name="description" content="Art-O-Rama Gallery - Joe Crosetto">
 <meta name="keywords" content="Art,Art-O-Rama Gallery,Art-O-Rama,Joe Crosetto,Joseph Crosetto,Crosetto,mugs,pottery,ceramics,cups,clay,chicago">
 <meta name="author" content="Art-O-Rama">
-<meta property="og:title" content="Art-O-Rama Gallery - Mug of Joe" />
+<meta property="og:title" content="Art-O-Rama Gallery - Mug a Joe" />
 <meta property="og:description" content="Handmade Mugs of Joe Crosetto at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://aor.gallery/joemug/muga.php" />
-<meta property="og:image" content="http://aor.gallery/joemug/img/mugb1a_lg.jpg" />
+<meta property="og:url" content="http://aor.gallery/joemug/index.php" />
+<meta property="og:image" content="http://aor.gallery/joemug/img/joemug4a_lg.jpg" />
 <!--<meta property="og:video" content="http://aor.gallery/joemug/img/joemug1a_lg.mp4" /> -->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
-<title>Art-O-Rama - Mug of Joe</title>
+<title>Art-O-Rama - Mug a Joe</title>
 <link rel="shortcut icon" type="image/ico" href="http://aor.gallery/aor.ico"/>
 <link rel="stylesheet" href="../css/foundation.min.css" /> 
 <link rel="stylesheet" href="../css/exhibit.css" />

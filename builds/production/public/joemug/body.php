@@ -340,6 +340,15 @@
 					<span class="social-icons-space">
 				<a class="fb-icon" href="#"><i class="fa fa-facebook fa-lg v-space-sm"></i></a>
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg v-space-sm"></i></a>
+				<!-- new code begin 2017 -->
+				<br><br>
+				<h5 class="aor-font">Visit the other Mug of Joe Galleries</h5>
+				<a class="small-padding" href="muga.php">Mugs Gallery A</a><br>
+				<a class="small-padding" href="mugb.php">Mugs Gallery B</a><br>
+				<a class="small-padding" href="mugc.php">Mugs Gallery C</a><br>
+				<a class="small-padding" href="bowls.php">Bowls</a><br>
+				<a class="small-padding" href="pots.php">Pots</a>
+				<!-- new code end 2017 -->
 				<!--<a class="pinterest-icon" href="#"><i class="fa fa-pinterest-p fa-lg v-space-sm"></i></a>--> </span><br>
 				</div>
 				
@@ -367,7 +376,7 @@
 						<image   clip-path="url(#shape-divide5)" width="1440" height="115" xlink:href="../img/texture_blue.png" preserveAspectRatio="xMidYMin slice"></image>
 					</svg>
 						</div>
-						<h5 class="aor-font divide-content"><?php echo GALLERY_NAME ?> Gallery</h5>
+						<h5 class="aor-font divide-content"><?php echo GALLERY_NAME ?></h5>
 						<div class="row divide-row">
 								<div  class="small-12 medium-8 columns divide-label-lg">
 								</div>
@@ -434,31 +443,30 @@
 
 <div class="brown-footer">
 	<div class="row">
-		<!--<div class="small-12 medium-7 medium-push-2 columns">
+		<div class="small-12 medium-7 medium-push-2 columns">
 			<div class="row">
-				<h5 class="rick-font text-center"><a href="index.php">Rick Therrio Galleries</a></h5>
+				<h5 class="aor-font text-center"><a href="index.php">Mug of Joe Galleries</a></h5>
 				<div class="small-5   medium-5  large-offset-1 large-4 columns">
-					<p><a href="worlds.php">Micro Worlds</a><br>
-						 <a href="rp.php">Rick & Pete</a><br>
-						 <a href="self.php">Self-Portraits</a><br></p>
+					<p><a href="muga.php">Mugs Gallery A</a><br>
+						 <a href="mugb.php">Mugs Gallery B</a><br>
+						 <a href="mugc.php">Mugs Gallery C</a><br>
+						 </p>
 				</div>
 				<div class="small-3 medium-3 large-3 columns">
-					<p><a href="dogs.php">Dogs</a><br>
-						 <a href="lamps.php">Lamps</a><br></p>
+					<p>	 <a href="bowls.php">Bowls</a><br></p>
 				</div>
 				<div class="small-4 medium-4 large-4 columns">
-					<p><a href="random.php">Random</a><br>
-						 <a href="bombs.php">Atom Bombs</a><br></p>
+					<p><a href="pots.php">Pots</a><br></p>
 				</div>
 			</div>
 		
-		</div> -->
-		<div class="small-6  columns text-center">
+		</div> 
+		<div class="small-6 medium-2 medium-pull-7 columns text-center">
 			<h5 class="aor-font">Share</h5>
 				<a class="fb-icon" href="#"><i class="fa fa-facebook fa-lg "></i></a>
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg h-space"></i></a>
 		</div>
-		<div class="small-6  columns text-center">
+		<div class="small-6  medium-3 columns text-center">
 			<a href="../index.php"><img src="../img/aor_logo_brown_sm.png" class="logo-footer"></a><br>
 			<a href="../index.php">Home</a>&nbsp;&nbsp;&nbsp;
 			<a href="../contact.php">Contact</a>&nbsp;&nbsp;&nbsp;

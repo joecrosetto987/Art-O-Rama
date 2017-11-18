@@ -3,7 +3,7 @@
 <?php require_once("../../includes/functions.php"); ?>
 
 <?php
-	define("GALLERY_NAME", "Mugs Gallery A");
+	define("GALLERY_NAME", "Bowls");
 	define("ARTIST", "Joe Crosetto");
 	$gallery = find_gallery_by_name(GALLERY_NAME);
 	define("FILENAME_PREFIX", $gallery["gallery_filename_prefix"]);
@@ -22,8 +22,8 @@
 <meta property="og:title" content="Art-O-Rama Gallery - Mug of Joe" />
 <meta property="og:description" content="Handmade Mugs of Joe Crosetto at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://aor.gallery/joemug/muga.php" />
-<meta property="og:image" content="http://aor.gallery/joemug/img/mugb1a_lg.jpg" />
+<meta property="og:url" content="http://aor.gallery/joemug/bowls.php" />
+<meta property="og:image" content="http://aor.gallery/joemug/img/bowls1a_lg.jpg" />
 <!--<meta property="og:video" content="http://aor.gallery/joemug/img/joemug1a_lg.mp4" /> -->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />

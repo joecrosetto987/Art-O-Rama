@@ -12,7 +12,7 @@
 <meta property="og:description" content="Amazing art that will bend your mind into a pretzel at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://aor.gallery/index.php" />
-<meta property="og:image" content="http://aor.gallery/img/aorhome_rick.jpg" />
+<meta property="og:image" content="http://aor.gallery/joemug/img/mugb1a_lg.jpg" />
 <!--<meta property="og:video" content="http://aor.gallery/rick/img/worlds1a_lg.mp4" />-->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
