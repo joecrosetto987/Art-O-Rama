@@ -23,7 +23,7 @@
 <meta property="og:description" content="Handmade Mugs of Joe Crosetto at Art-O-Rama Gallery" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://aor.gallery/joemug/mugc.php" />
-<meta property="og:image" content="http://aor.gallery/joemug/img/mugb1a_lg.jpg" />
+<meta property="og:image" content="http://aor.gallery/joemug/img/wonderful-mug4.jpg" />
 <!--<meta property="og:video" content="http://aor.gallery/joemug/img/joemug1a_lg.mp4" /> -->
 <meta property="fb:app_id" content="1632020133762008" />
 <meta name="viewport" content="width=device-width" />
