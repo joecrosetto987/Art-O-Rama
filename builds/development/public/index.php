@@ -43,7 +43,7 @@
 <body>
 <?php $selected_table = array ("table" => "aorhome"); ?>
 <?php require_once("aor_head.php"); ?>
-<?php require_once("aorhome_body2.php"); ?>
+<?php require_once("aorhome_body3.php"); ?>
 	<script src="js/aor.js"></script>
 		
     <script src="js/vendor/jquery.min.js"></script>
