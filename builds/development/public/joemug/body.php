@@ -342,12 +342,13 @@
 				<a class="twitter-icon" href="#"><i class="fa fa-twitter fa-lg v-space-sm"></i></a>
 				<!-- new code begin 2017 -->
 				<br><br>
-				<h5 class="aor-font">Visit the other Mug of Joe Galleries</h5>
-				<a class="small-padding" href="muga.php">Mugs Gallery A</a><br>
-				<a class="small-padding" href="mugb.php">Mugs Gallery B</a><br>
-				<a class="small-padding" href="mugc.php">Mugs Gallery C</a><br>
-				<a class="small-padding" href="bowls.php">Bowls</a><br>
-				<a class="small-padding" href="pots.php">Pots</a>
+				<h5 class="aor-font">Visit the other Joe & Friends Galleries</h5>
+				<a class="small-padding" href="muga.php">Joe Travel Mugs</a><br>
+				<a class="small-padding" href="mugb.php">Joe Coffee Mugs</a><br>
+				<a class="small-padding" href="pots.php">Joe Pots</a><br>
+				<a class="small-padding" href="jpcd.php">Colson Drawings</a><br>
+				<a class="small-padding" href="jpcp.php">Colson Pots</a><br>
+				<a class="small-padding" href="crtp.php">Charlotte Nubbin Pots</a>
 				<!-- new code end 2017 -->
 				<!--<a class="pinterest-icon" href="#"><i class="fa fa-pinterest-p fa-lg v-space-sm"></i></a>--> </span><br>
 				</div>
@@ -445,18 +446,19 @@
 	<div class="row">
 		<div class="small-12 medium-7 medium-push-2 columns">
 			<div class="row">
-				<h5 class="aor-font text-center"><a href="index.php">Mug of Joe Galleries</a></h5>
+				<h5 class="aor-font text-center"><a href="index.php">Joe & Friends Galleries</a></h5>
 				<div class="small-5   medium-5  large-offset-1 large-4 columns">
-					<p><a href="muga.php">Mugs Gallery A</a><br>
-						 <a href="mugb.php">Mugs Gallery B</a><br>
-						 <a href="mugc.php">Mugs Gallery C</a><br>
+					<p><a href="muga.php">Joe Travel Mugs</a><br>
+						 <a href="mugb.php">Joe Coffee Mugs</a><br>
+						 <a href="pots.php">Joe Pots</a><br>
 						 </p>
 				</div>
 				<div class="small-3 medium-3 large-3 columns">
-					<p>	 <a href="bowls.php">Bowls</a><br></p>
+					<p><a href="jpcd.php">Colson Drawings</a><br>
+					<a href="jpcp.php">Colson Pots</a><br></p>
 				</div>
 				<div class="small-4 medium-4 large-4 columns">
-					<p><a href="pots.php">Pots</a><br></p>
+					<p><a href="crtp.php">Charlotte Nubbin Pots</a><br></p>
 				</div>
 			</div>
 		

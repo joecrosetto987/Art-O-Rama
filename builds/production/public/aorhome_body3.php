@@ -17,25 +17,16 @@
 	</div>
 	<div class="thumb small-10 column">
 		<div class="row small-up-2 large-up-3">
-				<div class="thumb column">
-				<a href="rick/index.php">
-					<div class="media"> 
-					<img src="img/rick_tb.jpg" class="th" alt="Thumbnail for drawing by Rick Therrio">
-					  <div class="media__body">
-               <h6 class="text"><strong>Rick Therrio</strong><br>
-               		 Existence is Absurd</h6>
-         		</div>
-    			</div> 
-				</a>
-			</div>
+			
+		
 	
 			<div class="thumb column">
 				<a href="joemug/muga.php">
 					<div class="media"> 
-					<img src="img/muga4a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
+					<img src="joemug/img/muga1a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
-               <h6 class="text"><strong>Mug of Joe</strong><br>
-               		 Gallery A</h6>
+               <h6 class="text"><strong>Joe Crosetto</strong><br>
+               		 Travel Mugs</h6>
         		</div>
     			</div> 
 				</a>
@@ -43,32 +34,10 @@
 			<div class="thumb column">
 				<a href="joemug/mugb.php">
 					<div class="media"> 
-					<img src="img/mugb7b_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
+					<img src="joemug/img/mugb2a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
-               <h6 class="text"><strong>Mug of Joe</strong><br>
-               		 Gallery B</h6>
-        		</div>
-    			</div> 
-				</a>
-			</div>
-			<div class="thumb column">
-				<a href="joemug/mugc.php">
-					<div class="media"> 
-					<img src="img/mugc2a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
-					  <div class="media__body">
-               <h6 class="text"><strong>Mug of Joe</strong><br>
-               		 Gallery C</h6>
-        		</div>
-    			</div> 
-				</a>
-			</div>
-			<div class="thumb column">
-				<a href="joemug/bowls.php">
-					<div class="media"> 
-					<img src="img/bowls1a_tb.jpg" class="th" alt="Thumbnail for a bowl by Joseph Crosetto">
-					  <div class="media__body">
-               <h6 class="text"><strong>Mug of Joe</strong><br>
-               		 Bowls</h6>
+               <h6 class="text"><strong>Joe Crosetto</strong><br>
+               		 Coffee Mugs</h6>
         		</div>
     			</div> 
 				</a>
@@ -76,14 +45,30 @@
 			<div class="thumb column">
 				<a href="joemug/pots.php">
 					<div class="media"> 
-					<img src="img/pots1a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
+					<img src="joemug/img/pots1a_tb.jpg" class="th" alt="Thumbnail for Coffee Mug by Joseph Crosetto">
 					  <div class="media__body">
-               <h6 class="text"><strong>Mug of Joe</strong><br>
+               <h6 class="text"><strong>Joe Crosetto</strong><br>
                		 Pots</h6>
         		</div>
     			</div> 
 				</a>
 			</div>
+			<div class="thumb column">
+				<a href="joemug/jpcp.php">
+					<div class="media"> 
+					<img src="joemug/img/jpcp1a_tb.jpg" class="th" alt="Thumbnail for a pot by John Colson">
+					  <div class="media__body">
+               <h6 class="text"><strong>John Colson</strong><br>
+               		 Pots</h6>
+        		</div>
+    			</div> 
+				</a>
+			</div>
+
+
+
+
+			
 			<div class="thumb column">
 				<a href="joemug/jpcd.php">
 					<div class="media"> 
@@ -95,6 +80,31 @@
     			</div> 
 				</a>
 			</div>
+
+			<div class="thumb column">
+				<a href="joemug/crtp.php">
+					<div class="media"> 
+					<img src="joemug/img/crtp1a_tb.jpg" class="th" alt="Thumbnail for Pots by Charlotte True">
+					  <div class="media__body">
+               <h6 class="text"><strong>Charlotte True</strong><br>
+               		 Pots</h6>
+        		</div>
+    			</div> 
+				</a>
+			</div>
+
+			<div class="thumb column">
+				<a href="rick/index.php">
+					<div class="media"> 
+					<img src="img/rick_tb.jpg" class="th" alt="Thumbnail for drawing by Rick Therrio">
+					  <div class="media__body">
+               <h6 class="text"><strong>Rick Therrio</strong><br>
+               		 Existence is Absurd</h6>
+         		</div>
+    			</div> 
+				</a>
+			</div>
+
 
 		</div>
 			</div>
